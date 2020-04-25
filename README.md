@@ -8,7 +8,8 @@ Former fw framework for creating faster and more reliable web applications (spec
   - Orm
   - Oop
   - Mvc
-
+# ATTENTION! :
+  remember this version in not stable and no stable releases of this framework has been published!
 # New Features!
 
   - Improving Orm (object relational mapping)
