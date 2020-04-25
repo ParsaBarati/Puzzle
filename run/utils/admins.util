@@ -1,0 +1,65 @@
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO"; SET AUTOCOMMIT = 0; START TRANSACTION; SET time_zone = "+00:00"; CREATE TABLE `admins` ( `aid` int(11) NOT NULL, `name` text COLLATE utf8_persian_ci NOT NULL, `username` text COLLATE utf8_persian_ci NOT NULL, `password` text COLLATE utf8_persian_ci NOT NULL, `pic` varchar(250) COLLATE utf8_persian_ci NOT NULL ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci; INSERT INTO `admins` (`aid`, `name`, `username`, `password`, `pic`) VALUES (1, 'مدیر سیستم', 'admin', '63982e54a7aeb0d89910475ba6dbd3ca6dd4e5a1', 'avatar1.png'), (2, 'مدیر سیستم 2', 'admin2', '63982e54a7aeb0d89910475ba6dbd3ca6dd4e5a1', 'avatar1.png'); ALTER TABLE `admins` ADD PRIMARY KEY (`aid`); ALTER TABLE `admins` MODIFY `aid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10105; COMMIT;
+-- phpMyAdmin SQL Dump
+-- version 4.9.4
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:3306
+-- Generation Time: Apr 09, 2020 at 08:15 PM
+-- Server version: 10.3.22-MariaDB
+-- PHP Version: 7.3.6
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `hyperli_db`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `actions`
+--
+
+CREATE TABLE `actions` (
+  `action_id` int(11) NOT NULL,
+  `admin_id` int(11) DEFAULT NULL,
+  `date` int(11) DEFAULT NULL,
+  `row_id` int(11) DEFAULT NULL,
+  `data_before_edit` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
+  `action_type` varchar(10) COLLATE utf8_persian_ci DEFAULT NULL,
+  `tblName` varchar(50) COLLATE utf8_persian_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `actions`
+--
+ALTER TABLE `actions`
+  ADD PRIMARY KEY (`action_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `actions`
+--
+ALTER TABLE `actions`
+  MODIFY `action_id` int(11) NOT NULL AUTO_INCREMENT;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

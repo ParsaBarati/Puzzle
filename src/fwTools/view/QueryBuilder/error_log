@@ -1,0 +1,2 @@
+[19-Feb-2020 17:00:27 Asia/Tehran] PHP Warning:  Invalid argument supplied for foreach() in /home/parsa/public_html/framework/src/fwTools/view/QueryBuilder/QueryBuilder.php on line 41
+[19-Feb-2020 17:00:28 Asia/Tehran] PHP Warning:  Invalid argument supplied for foreach() in /home/parsa/public_html/framework/src/fwTools/view/QueryBuilder/QueryBuilder.php on line 41

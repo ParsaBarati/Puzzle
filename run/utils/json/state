@@ -1,0 +1,126 @@
+[
+  {
+    "state_id": 1,
+    "state_name": "آذربایجان شرقی"
+  },
+  {
+    "state_id": 2,
+    "state_name": "آذربایجان غربی"
+  },
+  {
+    "state_id": 3,
+    "state_name": "اردبیل"
+  },
+  {
+    "state_id": 4,
+    "state_name": "اصفهان"
+  },
+  {
+    "state_id": 5,
+    "state_name": "البرز"
+  },
+  {
+    "state_id": 6,
+    "state_name": "ایلام"
+  },
+  {
+    "state_id": 7,
+    "state_name": "بوشهر"
+  },
+  {
+    "state_id": 8,
+    "state_name": "تهران"
+  },
+  {
+    "state_id": 9,
+    "state_name": "چهارمحال وبختیاری"
+  },
+  {
+    "state_id": 10,
+    "state_name": "خراسان جنوبی"
+  },
+  {
+    "state_id": 11,
+    "state_name": "خراسان رضوی"
+  },
+  {
+    "state_id": 12,
+    "state_name": "خراسان شمالی"
+  },
+  {
+    "state_id": 13,
+    "state_name": "خوزستان"
+  },
+  {
+    "state_id": 14,
+    "state_name": "زنجان"
+  },
+  {
+    "state_id": 15,
+    "state_name": "سمنان"
+  },
+  {
+    "state_id": 16,
+    "state_name": "سیستان وبلوچستان"
+  },
+  {
+    "state_id": 17,
+    "state_name": "فارس"
+  },
+  {
+    "state_id": 18,
+    "state_name": "قزوین"
+  },
+  {
+    "state_id": 19,
+    "state_name": "قم"
+  },
+  {
+    "state_id": 20,
+    "state_name": "کردستان"
+  },
+  {
+    "state_id": 21,
+    "state_name": "کرمان"
+  },
+  {
+    "state_id": 22,
+    "state_name": "کرمانشاه"
+  },
+  {
+    "state_id": 23,
+    "state_name": "کهگیلویه وبویراحمد"
+  },
+  {
+    "state_id": 24,
+    "state_name": "گلستان"
+  },
+  {
+    "state_id": 25,
+    "state_name": "گیلان"
+  },
+  {
+    "state_id": 26,
+    "state_name": "لرستان"
+  },
+  {
+    "state_id": 27,
+    "state_name": "مازندران"
+  },
+  {
+    "state_id": 28,
+    "state_name": "مرکزی"
+  },
+  {
+    "state_id": 29,
+    "state_name": "هرمزگان"
+  },
+  {
+    "state_id": 30,
+    "state_name": "همدان"
+  },
+  {
+    "state_id": 31,
+    "state_name": ""
+  }
+]

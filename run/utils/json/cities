@@ -1,0 +1,2172 @@
+[
+  {
+    "ciy_id": 1,
+    "city_name": "آبادان",
+    "state_id": 13
+  },
+  {
+    "ciy_id": 2,
+    "city_name": "آباده",
+    "state_id": 17
+  },
+  {
+    "ciy_id": 3,
+    "city_name": "آبدانان",
+    "state_id": 6
+  },
+  {
+    "ciy_id": 4,
+    "city_name": "آبیک",
+    "state_id": 18
+  },
+  {
+    "ciy_id": 5,
+    "city_name": "آذرشهر",
+    "state_id": 1
+  },
+  {
+    "ciy_id": 6,
+    "city_name": "آرادان",
+    "state_id": 15
+  },
+  {
+    "ciy_id": 7,
+    "city_name": "آران وبیدگل",
+    "state_id": 4
+  },
+  {
+    "ciy_id": 8,
+    "city_name": "آزادشهر",
+    "state_id": 24
+  },
+  {
+    "ciy_id": 9,
+    "city_name": "آستارا",
+    "state_id": 25
+  },
+  {
+    "ciy_id": 10,
+    "city_name": "آستانه اشرفیه",
+    "state_id": 25
+  },
+  {
+    "ciy_id": 11,
+    "city_name": "آشتیان",
+    "state_id": 28
+  },
+  {
+    "ciy_id": 12,
+    "city_name": "آغاجاری",
+    "state_id": 13
+  },
+  {
+    "ciy_id": 13,
+    "city_name": "آق قلا",
+    "state_id": 24
+  },
+  {
+    "ciy_id": 14,
+    "city_name": "آمل",
+    "state_id": 27
+  },
+  {
+    "ciy_id": 15,
+    "city_name": "آوج",
+    "state_id": 18
+  },
+  {
+    "ciy_id": 16,
+    "city_name": "ابرکوه",
+    "state_id": 31
+  },
+  {
+    "ciy_id": 17,
+    "city_name": "ابوموسی",
+    "state_id": 29
+  },
+  {
+    "ciy_id": 18,
+    "city_name": "ابهر",
+    "state_id": 14
+  },
+  {
+    "ciy_id": 19,
+    "city_name": "اراک",
+    "state_id": 28
+  },
+  {
+    "ciy_id": 20,
+    "city_name": "اردبیل",
+    "state_id": 3
+  },
+  {
+    "ciy_id": 21,
+    "city_name": "اردستان",
+    "state_id": 4
+  },
+  {
+    "ciy_id": 22,
+    "city_name": "اردکان",
+    "state_id": 31
+  },
+  {
+    "ciy_id": 23,
+    "city_name": "اردل",
+    "state_id": 9
+  },
+  {
+    "ciy_id": 24,
+    "city_name": "ارزوییه",
+    "state_id": 21
+  },
+  {
+    "ciy_id": 25,
+    "city_name": "ارسنجان",
+    "state_id": 17
+  },
+  {
+    "ciy_id": 26,
+    "city_name": "ارومیه",
+    "state_id": 2
+  },
+  {
+    "ciy_id": 27,
+    "city_name": "ازنا",
+    "state_id": 26
+  },
+  {
+    "ciy_id": 28,
+    "city_name": "استهبان",
+    "state_id": 17
+  },
+  {
+    "ciy_id": 29,
+    "city_name": "اسدآباد",
+    "state_id": 30
+  },
+  {
+    "ciy_id": 30,
+    "city_name": "اسفراین",
+    "state_id": 12
+  },
+  {
+    "ciy_id": 31,
+    "city_name": "اسکو",
+    "state_id": 1
+  },
+  {
+    "ciy_id": 32,
+    "city_name": "اسلام آبادغرب",
+    "state_id": 22
+  },
+  {
+    "ciy_id": 33,
+    "city_name": "اسلامشهر",
+    "state_id": 8
+  },
+  {
+    "ciy_id": 34,
+    "city_name": "اشتهارد",
+    "state_id": 5
+  },
+  {
+    "ciy_id": 35,
+    "city_name": "اشکذر",
+    "state_id": 31
+  },
+  {
+    "ciy_id": 36,
+    "city_name": "اشنویه",
+    "state_id": 2
+  },
+  {
+    "ciy_id": 37,
+    "city_name": "اصفهان",
+    "state_id": 4
+  },
+  {
+    "ciy_id": 38,
+    "city_name": "اصلاندوز",
+    "state_id": 3
+  },
+  {
+    "ciy_id": 39,
+    "city_name": "اقلید",
+    "state_id": 17
+  },
+  {
+    "ciy_id": 40,
+    "city_name": "البرز",
+    "state_id": 18
+  },
+  {
+    "ciy_id": 41,
+    "city_name": "الیگودرز",
+    "state_id": 26
+  },
+  {
+    "ciy_id": 42,
+    "city_name": "املش",
+    "state_id": 25
+  },
+  {
+    "ciy_id": 43,
+    "city_name": "امیدیه",
+    "state_id": 13
+  },
+  {
+    "ciy_id": 44,
+    "city_name": "انار",
+    "state_id": 21
+  },
+  {
+    "ciy_id": 45,
+    "city_name": "اندیکا",
+    "state_id": 13
+  },
+  {
+    "ciy_id": 46,
+    "city_name": "اندیمشک",
+    "state_id": 13
+  },
+  {
+    "ciy_id": 47,
+    "city_name": "اهر",
+    "state_id": 1
+  },
+  {
+    "ciy_id": 48,
+    "city_name": "اهواز",
+    "state_id": 13
+  },
+  {
+    "ciy_id": 49,
+    "city_name": "ایجرود",
+    "state_id": 14
+  },
+  {
+    "ciy_id": 50,
+    "city_name": "ایذه",
+    "state_id": 13
+  },
+  {
+    "ciy_id": 51,
+    "city_name": "ایرانشهر",
+    "state_id": 16
+  },
+  {
+    "ciy_id": 52,
+    "city_name": "ایلام",
+    "state_id": 6
+  },
+  {
+    "ciy_id": 53,
+    "city_name": "ایوان",
+    "state_id": 6
+  },
+  {
+    "ciy_id": 54,
+    "city_name": "بابل",
+    "state_id": 27
+  },
+  {
+    "ciy_id": 55,
+    "city_name": "بابلسر",
+    "state_id": 27
+  },
+  {
+    "ciy_id": 56,
+    "city_name": "باخرز",
+    "state_id": 11
+  },
+  {
+    "ciy_id": 57,
+    "city_name": "باشت",
+    "state_id": 23
+  },
+  {
+    "ciy_id": 58,
+    "city_name": "باغ ملک",
+    "state_id": 13
+  },
+  {
+    "ciy_id": 59,
+    "city_name": "بافت",
+    "state_id": 21
+  },
+  {
+    "ciy_id": 60,
+    "city_name": "بافق",
+    "state_id": 31
+  },
+  {
+    "ciy_id": 61,
+    "city_name": "بانه",
+    "state_id": 20
+  },
+  {
+    "ciy_id": 62,
+    "city_name": "باوی",
+    "state_id": 13
+  },
+  {
+    "ciy_id": 63,
+    "city_name": "بجستان",
+    "state_id": 11
+  },
+  {
+    "ciy_id": 64,
+    "city_name": "بجنورد",
+    "state_id": 12
+  },
+  {
+    "ciy_id": 65,
+    "city_name": "بدره",
+    "state_id": 6
+  },
+  {
+    "ciy_id": 66,
+    "city_name": "برخوار",
+    "state_id": 4
+  },
+  {
+    "ciy_id": 67,
+    "city_name": "بردسکن",
+    "state_id": 11
+  },
+  {
+    "ciy_id": 68,
+    "city_name": "بردسیر",
+    "state_id": 21
+  },
+  {
+    "ciy_id": 69,
+    "city_name": "بروجرد",
+    "state_id": 26
+  },
+  {
+    "ciy_id": 70,
+    "city_name": "بروجن",
+    "state_id": 9
+  },
+  {
+    "ciy_id": 71,
+    "city_name": "بستان آباد",
+    "state_id": 1
+  },
+  {
+    "ciy_id": 72,
+    "city_name": "بستک",
+    "state_id": 29
+  },
+  {
+    "ciy_id": 73,
+    "city_name": "بشاگرد",
+    "state_id": 29
+  },
+  {
+    "ciy_id": 74,
+    "city_name": "بشرویه",
+    "state_id": 10
+  },
+  {
+    "ciy_id": 75,
+    "city_name": "بم",
+    "state_id": 21
+  },
+  {
+    "ciy_id": 76,
+    "city_name": "بمپور",
+    "state_id": 16
+  },
+  {
+    "ciy_id": 77,
+    "city_name": "بن",
+    "state_id": 9
+  },
+  {
+    "ciy_id": 78,
+    "city_name": "بناب",
+    "state_id": 1
+  },
+  {
+    "ciy_id": 79,
+    "city_name": "بندرانزلی",
+    "state_id": 25
+  },
+  {
+    "ciy_id": 80,
+    "city_name": "بندرعباس",
+    "state_id": 29
+  },
+  {
+    "ciy_id": 81,
+    "city_name": "بندرگز",
+    "state_id": 24
+  },
+  {
+    "ciy_id": 82,
+    "city_name": "بندرلنگه",
+    "state_id": 29
+  },
+  {
+    "ciy_id": 83,
+    "city_name": "بندرماهشهر",
+    "state_id": 13
+  },
+  {
+    "ciy_id": 84,
+    "city_name": "بو یین و میاندشت",
+    "state_id": 4
+  },
+  {
+    "ciy_id": 85,
+    "city_name": "بوانات",
+    "state_id": 17
+  },
+  {
+    "ciy_id": 86,
+    "city_name": "بویین زهرا",
+    "state_id": 18
+  },
+  {
+    "ciy_id": 87,
+    "city_name": "بوشهر",
+    "state_id": 7
+  },
+  {
+    "ciy_id": 88,
+    "city_name": "بوکان",
+    "state_id": 2
+  },
+  {
+    "ciy_id": 89,
+    "city_name": "بویراحمد",
+    "state_id": 23
+  },
+  {
+    "ciy_id": 90,
+    "city_name": "بهاباد",
+    "state_id": 31
+  },
+  {
+    "ciy_id": 91,
+    "city_name": "بهار",
+    "state_id": 30
+  },
+  {
+    "ciy_id": 92,
+    "city_name": "بهارستان",
+    "state_id": 8
+  },
+  {
+    "ciy_id": 93,
+    "city_name": "بهبهان",
+    "state_id": 13
+  },
+  {
+    "ciy_id": 94,
+    "city_name": "بهشهر",
+    "state_id": 27
+  },
+  {
+    "ciy_id": 95,
+    "city_name": "بهمیی",
+    "state_id": 23
+  },
+  {
+    "ciy_id": 96,
+    "city_name": "بیجار",
+    "state_id": 20
+  },
+  {
+    "ciy_id": 97,
+    "city_name": "بیرجند",
+    "state_id": 10
+  },
+  {
+    "ciy_id": 98,
+    "city_name": "بیله سوار",
+    "state_id": 3
+  },
+  {
+    "ciy_id": 99,
+    "city_name": "بینالود",
+    "state_id": 11
+  },
+  {
+    "ciy_id": 100,
+    "city_name": "پارس آباد",
+    "state_id": 3
+  },
+  {
+    "ciy_id": 101,
+    "city_name": "پارسیان",
+    "state_id": 29
+  },
+  {
+    "ciy_id": 102,
+    "city_name": "پاسارگاد",
+    "state_id": 17
+  },
+  {
+    "ciy_id": 103,
+    "city_name": "پاکدشت",
+    "state_id": 8
+  },
+  {
+    "ciy_id": 104,
+    "city_name": "پاوه",
+    "state_id": 22
+  },
+  {
+    "ciy_id": 105,
+    "city_name": "پردیس",
+    "state_id": 8
+  },
+  {
+    "ciy_id": 106,
+    "city_name": "پلدختر",
+    "state_id": 26
+  },
+  {
+    "ciy_id": 107,
+    "city_name": "پلدشت",
+    "state_id": 2
+  },
+  {
+    "ciy_id": 108,
+    "city_name": "پیرانشهر",
+    "state_id": 2
+  },
+  {
+    "ciy_id": 109,
+    "city_name": "پیشوا",
+    "state_id": 8
+  },
+  {
+    "ciy_id": 110,
+    "city_name": "تاکستان",
+    "state_id": 18
+  },
+  {
+    "ciy_id": 111,
+    "city_name": "تایباد",
+    "state_id": 11
+  },
+  {
+    "ciy_id": 112,
+    "city_name": "تبریز",
+    "state_id": 1
+  },
+  {
+    "ciy_id": 113,
+    "city_name": "تربت جام",
+    "state_id": 11
+  },
+  {
+    "ciy_id": 114,
+    "city_name": "تربت حیدریه",
+    "state_id": 11
+  },
+  {
+    "ciy_id": 115,
+    "city_name": "ترکمن",
+    "state_id": 24
+  },
+  {
+    "ciy_id": 116,
+    "city_name": "تفت",
+    "state_id": 31
+  },
+  {
+    "ciy_id": 117,
+    "city_name": "تفرش",
+    "state_id": 28
+  },
+  {
+    "ciy_id": 118,
+    "city_name": "تکاب",
+    "state_id": 2
+  },
+  {
+    "ciy_id": 119,
+    "city_name": "تنکابن",
+    "state_id": 27
+  },
+  {
+    "ciy_id": 120,
+    "city_name": "تنگستان",
+    "state_id": 7
+  },
+  {
+    "ciy_id": 121,
+    "city_name": "تویسرکان",
+    "state_id": 30
+  },
+  {
+    "ciy_id": 122,
+    "city_name": "تهران",
+    "state_id": 8
+  },
+  {
+    "ciy_id": 123,
+    "city_name": "تیران وکرون",
+    "state_id": 4
+  },
+  {
+    "ciy_id": 124,
+    "city_name": "ثلاث باباجانی",
+    "state_id": 22
+  },
+  {
+    "ciy_id": 125,
+    "city_name": "جاجرم",
+    "state_id": 12
+  },
+  {
+    "ciy_id": 126,
+    "city_name": "جاسک",
+    "state_id": 29
+  },
+  {
+    "ciy_id": 127,
+    "city_name": "جغتای",
+    "state_id": 11
+  },
+  {
+    "ciy_id": 128,
+    "city_name": "جلفا",
+    "state_id": 1
+  },
+  {
+    "ciy_id": 129,
+    "city_name": "جم",
+    "state_id": 7
+  },
+  {
+    "ciy_id": 130,
+    "city_name": "جوانرود",
+    "state_id": 22
+  },
+  {
+    "ciy_id": 131,
+    "city_name": "جویبار",
+    "state_id": 27
+  },
+  {
+    "ciy_id": 132,
+    "city_name": "جوین",
+    "state_id": 11
+  },
+  {
+    "ciy_id": 133,
+    "city_name": "جهرم",
+    "state_id": 17
+  },
+  {
+    "ciy_id": 134,
+    "city_name": "جیرفت",
+    "state_id": 21
+  },
+  {
+    "ciy_id": 135,
+    "city_name": "چابهار",
+    "state_id": 16
+  },
+  {
+    "ciy_id": 136,
+    "city_name": "چادگان",
+    "state_id": 4
+  },
+  {
+    "ciy_id": 137,
+    "city_name": "چاراویماق",
+    "state_id": 1
+  },
+  {
+    "ciy_id": 138,
+    "city_name": "چالدران",
+    "state_id": 2
+  },
+  {
+    "ciy_id": 139,
+    "city_name": "چالوس",
+    "state_id": 27
+  },
+  {
+    "ciy_id": 140,
+    "city_name": "چایپاره",
+    "state_id": 2
+  },
+  {
+    "ciy_id": 141,
+    "city_name": "چرام",
+    "state_id": 23
+  },
+  {
+    "ciy_id": 142,
+    "city_name": "چرداول",
+    "state_id": 6
+  },
+  {
+    "ciy_id": 143,
+    "city_name": "چگنی",
+    "state_id": 26
+  },
+  {
+    "ciy_id": 144,
+    "city_name": "چناران",
+    "state_id": 11
+  },
+  {
+    "ciy_id": 145,
+    "city_name": "حاجی اباد",
+    "state_id": 29
+  },
+  {
+    "ciy_id": 146,
+    "city_name": "حمیدیه",
+    "state_id": 13
+  },
+  {
+    "ciy_id": 147,
+    "city_name": "خاتم",
+    "state_id": 31
+  },
+  {
+    "ciy_id": 148,
+    "city_name": "خاش",
+    "state_id": 16
+  },
+  {
+    "ciy_id": 149,
+    "city_name": "خانمیرزا",
+    "state_id": 9
+  },
+  {
+    "ciy_id": 150,
+    "city_name": "خداآفرین",
+    "state_id": 1
+  },
+  {
+    "ciy_id": 151,
+    "city_name": "خدابنده",
+    "state_id": 14
+  },
+  {
+    "ciy_id": 152,
+    "city_name": "خرامه",
+    "state_id": 17
+  },
+  {
+    "ciy_id": 153,
+    "city_name": "خرم آباد",
+    "state_id": 26
+  },
+  {
+    "ciy_id": 154,
+    "city_name": "خرم بید",
+    "state_id": 17
+  },
+  {
+    "ciy_id": 155,
+    "city_name": "خرمدره",
+    "state_id": 14
+  },
+  {
+    "ciy_id": 156,
+    "city_name": "خرمشهر",
+    "state_id": 13
+  },
+  {
+    "ciy_id": 157,
+    "city_name": "خلخال",
+    "state_id": 3
+  },
+  {
+    "ciy_id": 158,
+    "city_name": "خلیل آباد",
+    "state_id": 11
+  },
+  {
+    "ciy_id": 159,
+    "city_name": "خمیر",
+    "state_id": 29
+  },
+  {
+    "ciy_id": 160,
+    "city_name": "خمین",
+    "state_id": 28
+  },
+  {
+    "ciy_id": 161,
+    "city_name": "خمینی شهر",
+    "state_id": 4
+  },
+  {
+    "ciy_id": 162,
+    "city_name": "خنج",
+    "state_id": 17
+  },
+  {
+    "ciy_id": 163,
+    "city_name": "خنداب",
+    "state_id": 28
+  },
+  {
+    "ciy_id": 164,
+    "city_name": "خواف",
+    "state_id": 11
+  },
+  {
+    "ciy_id": 165,
+    "city_name": "خوانسار",
+    "state_id": 4
+  },
+  {
+    "ciy_id": 166,
+    "city_name": "خوی",
+    "state_id": 2
+  },
+  {
+    "ciy_id": 167,
+    "city_name": "خور و بیابانک",
+    "state_id": 4
+  },
+  {
+    "ciy_id": 168,
+    "city_name": "خوسف",
+    "state_id": 10
+  },
+  {
+    "ciy_id": 169,
+    "city_name": "خوشاب",
+    "state_id": 11
+  },
+  {
+    "ciy_id": 170,
+    "city_name": "داراب",
+    "state_id": 17
+  },
+  {
+    "ciy_id": 171,
+    "city_name": "دالاهو",
+    "state_id": 22
+  },
+  {
+    "ciy_id": 172,
+    "city_name": "دامغان",
+    "state_id": 15
+  },
+  {
+    "ciy_id": 173,
+    "city_name": "داورزن",
+    "state_id": 11
+  },
+  {
+    "ciy_id": 174,
+    "city_name": "درگز",
+    "state_id": 11
+  },
+  {
+    "ciy_id": 175,
+    "city_name": "درمیان",
+    "state_id": 10
+  },
+  {
+    "ciy_id": 176,
+    "city_name": "دره شهر",
+    "state_id": 6
+  },
+  {
+    "ciy_id": 177,
+    "city_name": "دزفول",
+    "state_id": 13
+  },
+  {
+    "ciy_id": 178,
+    "city_name": "دشت آزادگان",
+    "state_id": 13
+  },
+  {
+    "ciy_id": 179,
+    "city_name": "دشتستان",
+    "state_id": 7
+  },
+  {
+    "ciy_id": 180,
+    "city_name": "دشتی",
+    "state_id": 7
+  },
+  {
+    "ciy_id": 181,
+    "city_name": "دلفان",
+    "state_id": 26
+  },
+  {
+    "ciy_id": 182,
+    "city_name": "دلگان",
+    "state_id": 16
+  },
+  {
+    "ciy_id": 183,
+    "city_name": "دلیجان",
+    "state_id": 28
+  },
+  {
+    "ciy_id": 184,
+    "city_name": "دماوند",
+    "state_id": 8
+  },
+  {
+    "ciy_id": 185,
+    "city_name": "دنا",
+    "state_id": 23
+  },
+  {
+    "ciy_id": 186,
+    "city_name": "دورود",
+    "state_id": 26
+  },
+  {
+    "ciy_id": 187,
+    "city_name": "دهاقان",
+    "state_id": 4
+  },
+  {
+    "ciy_id": 188,
+    "city_name": "دهگلان",
+    "state_id": 20
+  },
+  {
+    "ciy_id": 189,
+    "city_name": "دهلران",
+    "state_id": 6
+  },
+  {
+    "ciy_id": 190,
+    "city_name": "دیر",
+    "state_id": 7
+  },
+  {
+    "ciy_id": 191,
+    "city_name": "دیلم",
+    "state_id": 7
+  },
+  {
+    "ciy_id": 192,
+    "city_name": "دیواندره",
+    "state_id": 20
+  },
+  {
+    "ciy_id": 193,
+    "city_name": "رابر",
+    "state_id": 21
+  },
+  {
+    "ciy_id": 194,
+    "city_name": "راز و جرگلان",
+    "state_id": 12
+  },
+  {
+    "ciy_id": 195,
+    "city_name": "رامسر",
+    "state_id": 27
+  },
+  {
+    "ciy_id": 196,
+    "city_name": "رامشیر",
+    "state_id": 13
+  },
+  {
+    "ciy_id": 197,
+    "city_name": "رامهرمز",
+    "state_id": 13
+  },
+  {
+    "ciy_id": 198,
+    "city_name": "رامیان",
+    "state_id": 24
+  },
+  {
+    "ciy_id": 199,
+    "city_name": "راور",
+    "state_id": 21
+  },
+  {
+    "ciy_id": 200,
+    "city_name": "ری",
+    "state_id": 8
+  },
+  {
+    "ciy_id": 201,
+    "city_name": "رباط کریم",
+    "state_id": 8
+  },
+  {
+    "ciy_id": 202,
+    "city_name": "رزن",
+    "state_id": 30
+  },
+  {
+    "ciy_id": 203,
+    "city_name": "رستم",
+    "state_id": 17
+  },
+  {
+    "ciy_id": 204,
+    "city_name": "رشت",
+    "state_id": 25
+  },
+  {
+    "ciy_id": 205,
+    "city_name": "رشتخوار",
+    "state_id": 11
+  },
+  {
+    "ciy_id": 206,
+    "city_name": "رضوانشهر",
+    "state_id": 25
+  },
+  {
+    "ciy_id": 207,
+    "city_name": "رفسنجان",
+    "state_id": 21
+  },
+  {
+    "ciy_id": 208,
+    "city_name": "روانسر",
+    "state_id": 22
+  },
+  {
+    "ciy_id": 209,
+    "city_name": "رودان",
+    "state_id": 29
+  },
+  {
+    "ciy_id": 210,
+    "city_name": "رودبار",
+    "state_id": 25
+  },
+  {
+    "ciy_id": 211,
+    "city_name": "رودبارجنوب",
+    "state_id": 21
+  },
+  {
+    "ciy_id": 212,
+    "city_name": "رودسر",
+    "state_id": 25
+  },
+  {
+    "ciy_id": 213,
+    "city_name": "رومشکان",
+    "state_id": 26
+  },
+  {
+    "ciy_id": 214,
+    "city_name": "ریگان",
+    "state_id": 21
+  },
+  {
+    "ciy_id": 215,
+    "city_name": "زابل",
+    "state_id": 16
+  },
+  {
+    "ciy_id": 216,
+    "city_name": "زاوه",
+    "state_id": 11
+  },
+  {
+    "ciy_id": 217,
+    "city_name": "زاهدان",
+    "state_id": 16
+  },
+  {
+    "ciy_id": 218,
+    "city_name": "زرند",
+    "state_id": 21
+  },
+  {
+    "ciy_id": 219,
+    "city_name": "زرندیه",
+    "state_id": 28
+  },
+  {
+    "ciy_id": 220,
+    "city_name": "زرین دشت",
+    "state_id": 17
+  },
+  {
+    "ciy_id": 221,
+    "city_name": "زنجان",
+    "state_id": 14
+  },
+  {
+    "ciy_id": 222,
+    "city_name": "زهک",
+    "state_id": 16
+  },
+  {
+    "ciy_id": 223,
+    "city_name": "زیرکوه",
+    "state_id": 10
+  },
+  {
+    "ciy_id": 224,
+    "city_name": "ساری",
+    "state_id": 27
+  },
+  {
+    "ciy_id": 225,
+    "city_name": "سامان",
+    "state_id": 9
+  },
+  {
+    "ciy_id": 226,
+    "city_name": "ساوجبلاغ",
+    "state_id": 5
+  },
+  {
+    "ciy_id": 227,
+    "city_name": "ساوه",
+    "state_id": 28
+  },
+  {
+    "ciy_id": 228,
+    "city_name": "سبزوار",
+    "state_id": 11
+  },
+  {
+    "ciy_id": 229,
+    "city_name": "سپیدان",
+    "state_id": 17
+  },
+  {
+    "ciy_id": 230,
+    "city_name": "سراب",
+    "state_id": 1
+  },
+  {
+    "ciy_id": 231,
+    "city_name": "سراوان",
+    "state_id": 16
+  },
+  {
+    "ciy_id": 232,
+    "city_name": "سرایان",
+    "state_id": 10
+  },
+  {
+    "ciy_id": 233,
+    "city_name": "سرباز",
+    "state_id": 16
+  },
+  {
+    "ciy_id": 234,
+    "city_name": "سربیشه",
+    "state_id": 10
+  },
+  {
+    "ciy_id": 235,
+    "city_name": "سرپل ذهاب",
+    "state_id": 22
+  },
+  {
+    "ciy_id": 236,
+    "city_name": "سرخس",
+    "state_id": 11
+  },
+  {
+    "ciy_id": 237,
+    "city_name": "سرخه",
+    "state_id": 15
+  },
+  {
+    "ciy_id": 238,
+    "city_name": "سردشت",
+    "state_id": 2
+  },
+  {
+    "ciy_id": 239,
+    "city_name": "سرعین",
+    "state_id": 3
+  },
+  {
+    "ciy_id": 240,
+    "city_name": "سروآباد",
+    "state_id": 20
+  },
+  {
+    "ciy_id": 241,
+    "city_name": "سروستان",
+    "state_id": 17
+  },
+  {
+    "ciy_id": 242,
+    "city_name": "سقز",
+    "state_id": 20
+  },
+  {
+    "ciy_id": 243,
+    "city_name": "سلسله",
+    "state_id": 26
+  },
+  {
+    "ciy_id": 244,
+    "city_name": "سلطانیه",
+    "state_id": 14
+  },
+  {
+    "ciy_id": 245,
+    "city_name": "سلماس",
+    "state_id": 2
+  },
+  {
+    "ciy_id": 246,
+    "city_name": "سمنان",
+    "state_id": 15
+  },
+  {
+    "ciy_id": 247,
+    "city_name": "سمیرم",
+    "state_id": 4
+  },
+  {
+    "ciy_id": 248,
+    "city_name": "سنقر",
+    "state_id": 22
+  },
+  {
+    "ciy_id": 249,
+    "city_name": "سنندج",
+    "state_id": 20
+  },
+  {
+    "ciy_id": 250,
+    "city_name": "سوادکوه",
+    "state_id": 27
+  },
+  {
+    "ciy_id": 251,
+    "city_name": "سوادکوه شمالی",
+    "state_id": 27
+  },
+  {
+    "ciy_id": 252,
+    "city_name": "سیاهکل",
+    "state_id": 25
+  },
+  {
+    "ciy_id": 253,
+    "city_name": "سیب و سوران",
+    "state_id": 16
+  },
+  {
+    "ciy_id": 254,
+    "city_name": "سیرجان",
+    "state_id": 21
+  },
+  {
+    "ciy_id": 255,
+    "city_name": "سیروان",
+    "state_id": 6
+  },
+  {
+    "ciy_id": 256,
+    "city_name": "سیریک",
+    "state_id": 29
+  },
+  {
+    "ciy_id": 257,
+    "city_name": "سیمرغ",
+    "state_id": 27
+  },
+  {
+    "ciy_id": 258,
+    "city_name": "شادگان",
+    "state_id": 13
+  },
+  {
+    "ciy_id": 259,
+    "city_name": "شازند",
+    "state_id": 28
+  },
+  {
+    "ciy_id": 260,
+    "city_name": "شاهرود",
+    "state_id": 15
+  },
+  {
+    "ciy_id": 261,
+    "city_name": "شاهین دژ",
+    "state_id": 2
+  },
+  {
+    "ciy_id": 262,
+    "city_name": "شاهین شهرومیمه",
+    "state_id": 4
+  },
+  {
+    "ciy_id": 263,
+    "city_name": "شبستر",
+    "state_id": 1
+  },
+  {
+    "ciy_id": 264,
+    "city_name": "شفت",
+    "state_id": 25
+  },
+  {
+    "ciy_id": 265,
+    "city_name": "شمیرانات",
+    "state_id": 8
+  },
+  {
+    "ciy_id": 266,
+    "city_name": "شوش",
+    "state_id": 13
+  },
+  {
+    "ciy_id": 267,
+    "city_name": "شوشتر",
+    "state_id": 13
+  },
+  {
+    "ciy_id": 268,
+    "city_name": "شوط",
+    "state_id": 2
+  },
+  {
+    "ciy_id": 269,
+    "city_name": "شهربابک",
+    "state_id": 21
+  },
+  {
+    "ciy_id": 270,
+    "city_name": "شهرضا",
+    "state_id": 4
+  },
+  {
+    "ciy_id": 271,
+    "city_name": "شهرکرد",
+    "state_id": 9
+  },
+  {
+    "ciy_id": 272,
+    "city_name": "شهریار",
+    "state_id": 8
+  },
+  {
+    "ciy_id": 273,
+    "city_name": "شیراز",
+    "state_id": 17
+  },
+  {
+    "ciy_id": 274,
+    "city_name": "شیروان",
+    "state_id": 12
+  },
+  {
+    "ciy_id": 275,
+    "city_name": "صالح آباد",
+    "state_id": 11
+  },
+  {
+    "ciy_id": 276,
+    "city_name": "صحنه",
+    "state_id": 22
+  },
+  {
+    "ciy_id": 277,
+    "city_name": "صومعه سرا",
+    "state_id": 25
+  },
+  {
+    "ciy_id": 278,
+    "city_name": "طارم",
+    "state_id": 14
+  },
+  {
+    "ciy_id": 279,
+    "city_name": "طالقان",
+    "state_id": 5
+  },
+  {
+    "ciy_id": 280,
+    "city_name": "طبس",
+    "state_id": 10
+  },
+  {
+    "ciy_id": 281,
+    "city_name": "طوالش",
+    "state_id": 25
+  },
+  {
+    "ciy_id": 282,
+    "city_name": "عباس آباد",
+    "state_id": 27
+  },
+  {
+    "ciy_id": 283,
+    "city_name": "عجب شیر",
+    "state_id": 1
+  },
+  {
+    "ciy_id": 284,
+    "city_name": "عسلویه",
+    "state_id": 7
+  },
+  {
+    "ciy_id": 285,
+    "city_name": "علی آباد",
+    "state_id": 24
+  },
+  {
+    "ciy_id": 286,
+    "city_name": "عنبرآباد",
+    "state_id": 21
+  },
+  {
+    "ciy_id": 287,
+    "city_name": "فارسان",
+    "state_id": 9
+  },
+  {
+    "ciy_id": 288,
+    "city_name": "فاروج",
+    "state_id": 12
+  },
+  {
+    "ciy_id": 289,
+    "city_name": "فاریاب",
+    "state_id": 21
+  },
+  {
+    "ciy_id": 290,
+    "city_name": "فامنین",
+    "state_id": 30
+  },
+  {
+    "ciy_id": 291,
+    "city_name": "فراشبند",
+    "state_id": 17
+  },
+  {
+    "ciy_id": 292,
+    "city_name": "فراهان",
+    "state_id": 28
+  },
+  {
+    "ciy_id": 293,
+    "city_name": "فردوس",
+    "state_id": 10
+  },
+  {
+    "ciy_id": 294,
+    "city_name": "فردیس",
+    "state_id": 5
+  },
+  {
+    "ciy_id": 295,
+    "city_name": "فریدن",
+    "state_id": 4
+  },
+  {
+    "ciy_id": 296,
+    "city_name": "فریدونشهر",
+    "state_id": 4
+  },
+  {
+    "ciy_id": 297,
+    "city_name": "فریدونکنار",
+    "state_id": 27
+  },
+  {
+    "ciy_id": 298,
+    "city_name": "فریمان",
+    "state_id": 11
+  },
+  {
+    "ciy_id": 299,
+    "city_name": "فسا",
+    "state_id": 17
+  },
+  {
+    "ciy_id": 300,
+    "city_name": "فلاورجان",
+    "state_id": 4
+  },
+  {
+    "ciy_id": 301,
+    "city_name": "فنوج",
+    "state_id": 16
+  },
+  {
+    "ciy_id": 302,
+    "city_name": "فومن",
+    "state_id": 25
+  },
+  {
+    "ciy_id": 303,
+    "city_name": "فهرج",
+    "state_id": 21
+  },
+  {
+    "ciy_id": 304,
+    "city_name": "فیروزآباد",
+    "state_id": 17
+  },
+  {
+    "ciy_id": 305,
+    "city_name": "فیروزکوه",
+    "state_id": 8
+  },
+  {
+    "ciy_id": 306,
+    "city_name": "فیروزه",
+    "state_id": 11
+  },
+  {
+    "ciy_id": 307,
+    "city_name": "قایم شهر",
+    "state_id": 27
+  },
+  {
+    "ciy_id": 308,
+    "city_name": "قاینات",
+    "state_id": 10
+  },
+  {
+    "ciy_id": 309,
+    "city_name": "قدس",
+    "state_id": 8
+  },
+  {
+    "ciy_id": 310,
+    "city_name": "قرچک",
+    "state_id": 8
+  },
+  {
+    "ciy_id": 311,
+    "city_name": "قروه",
+    "state_id": 20
+  },
+  {
+    "ciy_id": 312,
+    "city_name": "قزوین",
+    "state_id": 18
+  },
+  {
+    "ciy_id": 313,
+    "city_name": "قشم",
+    "state_id": 29
+  },
+  {
+    "ciy_id": 314,
+    "city_name": "قصرشیرین",
+    "state_id": 22
+  },
+  {
+    "ciy_id": 315,
+    "city_name": "قصرقند",
+    "state_id": 16
+  },
+  {
+    "ciy_id": 316,
+    "city_name": "قلعه گنج",
+    "state_id": 21
+  },
+  {
+    "ciy_id": 317,
+    "city_name": "قم",
+    "state_id": 19
+  },
+  {
+    "ciy_id": 318,
+    "city_name": "قوچان",
+    "state_id": 11
+  },
+  {
+    "ciy_id": 319,
+    "city_name": "قیروکارزین",
+    "state_id": 17
+  },
+  {
+    "ciy_id": 320,
+    "city_name": "کارون",
+    "state_id": 13
+  },
+  {
+    "ciy_id": 321,
+    "city_name": "کازرون",
+    "state_id": 17
+  },
+  {
+    "ciy_id": 322,
+    "city_name": "کاشان",
+    "state_id": 4
+  },
+  {
+    "ciy_id": 323,
+    "city_name": "کاشمر",
+    "state_id": 11
+  },
+  {
+    "ciy_id": 324,
+    "city_name": "کامیاران",
+    "state_id": 20
+  },
+  {
+    "ciy_id": 325,
+    "city_name": "کبودرآهنگ",
+    "state_id": 30
+  },
+  {
+    "ciy_id": 326,
+    "city_name": "کرج",
+    "state_id": 5
+  },
+  {
+    "ciy_id": 327,
+    "city_name": "کردکوی",
+    "state_id": 24
+  },
+  {
+    "ciy_id": 328,
+    "city_name": "کرمان",
+    "state_id": 21
+  },
+  {
+    "ciy_id": 329,
+    "city_name": "کرمانشاه",
+    "state_id": 22
+  },
+  {
+    "ciy_id": 330,
+    "city_name": "کلات",
+    "state_id": 11
+  },
+  {
+    "ciy_id": 331,
+    "city_name": "کلاردشت",
+    "state_id": 27
+  },
+  {
+    "ciy_id": 332,
+    "city_name": "کلاله",
+    "state_id": 24
+  },
+  {
+    "ciy_id": 333,
+    "city_name": "کلیبر",
+    "state_id": 1
+  },
+  {
+    "ciy_id": 334,
+    "city_name": "کمیجان",
+    "state_id": 28
+  },
+  {
+    "ciy_id": 335,
+    "city_name": "کنارک",
+    "state_id": 16
+  },
+  {
+    "ciy_id": 336,
+    "city_name": "کنگان",
+    "state_id": 7
+  },
+  {
+    "ciy_id": 337,
+    "city_name": "کنگاور",
+    "state_id": 22
+  },
+  {
+    "ciy_id": 338,
+    "city_name": "کوار",
+    "state_id": 17
+  },
+  {
+    "ciy_id": 339,
+    "city_name": "کوثر",
+    "state_id": 3
+  },
+  {
+    "ciy_id": 340,
+    "city_name": "کوهبنان",
+    "state_id": 21
+  },
+  {
+    "ciy_id": 341,
+    "city_name": "کوهدشت",
+    "state_id": 26
+  },
+  {
+    "ciy_id": 342,
+    "city_name": "کوهرنگ",
+    "state_id": 9
+  },
+  {
+    "ciy_id": 343,
+    "city_name": "کهگیلویه",
+    "state_id": 23
+  },
+  {
+    "ciy_id": 344,
+    "city_name": "کهنوج",
+    "state_id": 21
+  },
+  {
+    "ciy_id": 345,
+    "city_name": "کیار",
+    "state_id": 9
+  },
+  {
+    "ciy_id": 346,
+    "city_name": "گالیکش",
+    "state_id": 24
+  },
+  {
+    "ciy_id": 347,
+    "city_name": "گتوند",
+    "state_id": 13
+  },
+  {
+    "ciy_id": 348,
+    "city_name": "گچساران",
+    "state_id": 23
+  },
+  {
+    "ciy_id": 349,
+    "city_name": "گراش",
+    "state_id": 17
+  },
+  {
+    "ciy_id": 350,
+    "city_name": "گرگان",
+    "state_id": 24
+  },
+  {
+    "ciy_id": 351,
+    "city_name": "گرمسار",
+    "state_id": 15
+  },
+  {
+    "ciy_id": 352,
+    "city_name": "گرمه",
+    "state_id": 12
+  },
+  {
+    "ciy_id": 353,
+    "city_name": "گرمی",
+    "state_id": 3
+  },
+  {
+    "ciy_id": 354,
+    "city_name": "گلپایگان",
+    "state_id": 4
+  },
+  {
+    "ciy_id": 355,
+    "city_name": "گلوگاه",
+    "state_id": 27
+  },
+  {
+    "ciy_id": 356,
+    "city_name": "گمیشان",
+    "state_id": 24
+  },
+  {
+    "ciy_id": 357,
+    "city_name": "گناباد",
+    "state_id": 11
+  },
+  {
+    "ciy_id": 358,
+    "city_name": "گناوه",
+    "state_id": 7
+  },
+  {
+    "ciy_id": 359,
+    "city_name": "گنبدکاووس",
+    "state_id": 24
+  },
+  {
+    "ciy_id": 360,
+    "city_name": "گیلانغرب",
+    "state_id": 22
+  },
+  {
+    "ciy_id": 361,
+    "city_name": "لارستان",
+    "state_id": 17
+  },
+  {
+    "ciy_id": 362,
+    "city_name": "لالی",
+    "state_id": 13
+  },
+  {
+    "ciy_id": 363,
+    "city_name": "لامرد",
+    "state_id": 17
+  },
+  {
+    "ciy_id": 364,
+    "city_name": "لاهیجان",
+    "state_id": 25
+  },
+  {
+    "ciy_id": 365,
+    "city_name": "لردگان",
+    "state_id": 9
+  },
+  {
+    "ciy_id": 366,
+    "city_name": "لنجان",
+    "state_id": 4
+  },
+  {
+    "ciy_id": 367,
+    "city_name": "لنده",
+    "state_id": 23
+  },
+  {
+    "ciy_id": 368,
+    "city_name": "لنگرود",
+    "state_id": 25
+  },
+  {
+    "ciy_id": 369,
+    "city_name": "ماسال",
+    "state_id": 25
+  },
+  {
+    "ciy_id": 370,
+    "city_name": "ماکو",
+    "state_id": 2
+  },
+  {
+    "ciy_id": 371,
+    "city_name": "مانه وسملقان",
+    "state_id": 12
+  },
+  {
+    "ciy_id": 372,
+    "city_name": "ماهنشان",
+    "state_id": 14
+  },
+  {
+    "ciy_id": 373,
+    "city_name": "مبارکه",
+    "state_id": 4
+  },
+  {
+    "ciy_id": 374,
+    "city_name": "محلات",
+    "state_id": 28
+  },
+  {
+    "ciy_id": 375,
+    "city_name": "محمودآباد",
+    "state_id": 27
+  },
+  {
+    "ciy_id": 376,
+    "city_name": "مراغه",
+    "state_id": 1
+  },
+  {
+    "ciy_id": 377,
+    "city_name": "مراوه تپه",
+    "state_id": 24
+  },
+  {
+    "ciy_id": 378,
+    "city_name": "مرند",
+    "state_id": 1
+  },
+  {
+    "ciy_id": 379,
+    "city_name": "مرودشت",
+    "state_id": 17
+  },
+  {
+    "ciy_id": 380,
+    "city_name": "مریوان",
+    "state_id": 20
+  },
+  {
+    "ciy_id": 381,
+    "city_name": "مسجدسلیمان",
+    "state_id": 13
+  },
+  {
+    "ciy_id": 382,
+    "city_name": "مشگین شهر",
+    "state_id": 3
+  },
+  {
+    "ciy_id": 383,
+    "city_name": "مشهد",
+    "state_id": 11
+  },
+  {
+    "ciy_id": 384,
+    "city_name": "ملارد",
+    "state_id": 8
+  },
+  {
+    "ciy_id": 385,
+    "city_name": "ملایر",
+    "state_id": 30
+  },
+  {
+    "ciy_id": 386,
+    "city_name": "ملکان",
+    "state_id": 1
+  },
+  {
+    "ciy_id": 387,
+    "city_name": "ملکشاهی",
+    "state_id": 6
+  },
+  {
+    "ciy_id": 388,
+    "city_name": "ممسنی",
+    "state_id": 17
+  },
+  {
+    "ciy_id": 389,
+    "city_name": "منوجان",
+    "state_id": 21
+  },
+  {
+    "ciy_id": 390,
+    "city_name": "مه ولات",
+    "state_id": 11
+  },
+  {
+    "ciy_id": 391,
+    "city_name": "مهاباد",
+    "state_id": 2
+  },
+  {
+    "ciy_id": 392,
+    "city_name": "مهدی شهر",
+    "state_id": 15
+  },
+  {
+    "ciy_id": 393,
+    "city_name": "مهر",
+    "state_id": 17
+  },
+  {
+    "ciy_id": 394,
+    "city_name": "مهران",
+    "state_id": 6
+  },
+  {
+    "ciy_id": 395,
+    "city_name": "مهرستان",
+    "state_id": 16
+  },
+  {
+    "ciy_id": 396,
+    "city_name": "مهریز",
+    "state_id": 31
+  },
+  {
+    "ciy_id": 397,
+    "city_name": "میامی",
+    "state_id": 15
+  },
+  {
+    "ciy_id": 398,
+    "city_name": "میاندوآب",
+    "state_id": 2
+  },
+  {
+    "ciy_id": 399,
+    "city_name": "میاندورود",
+    "state_id": 27
+  },
+  {
+    "ciy_id": 400,
+    "city_name": "میانه",
+    "state_id": 1
+  },
+  {
+    "ciy_id": 401,
+    "city_name": "میبد",
+    "state_id": 31
+  },
+  {
+    "ciy_id": 402,
+    "city_name": "میرجاوه",
+    "state_id": 16
+  },
+  {
+    "ciy_id": 403,
+    "city_name": "میناب",
+    "state_id": 29
+  },
+  {
+    "ciy_id": 404,
+    "city_name": "مینودشت",
+    "state_id": 24
+  },
+  {
+    "ciy_id": 405,
+    "city_name": "نایین",
+    "state_id": 4
+  },
+  {
+    "ciy_id": 406,
+    "city_name": "نجف آباد",
+    "state_id": 4
+  },
+  {
+    "ciy_id": 407,
+    "city_name": "نرماشیر",
+    "state_id": 21
+  },
+  {
+    "ciy_id": 408,
+    "city_name": "نطنز",
+    "state_id": 4
+  },
+  {
+    "ciy_id": 409,
+    "city_name": "نظرآباد",
+    "state_id": 5
+  },
+  {
+    "ciy_id": 410,
+    "city_name": "نقده",
+    "state_id": 2
+  },
+  {
+    "ciy_id": 411,
+    "city_name": "نکا",
+    "state_id": 27
+  },
+  {
+    "ciy_id": 412,
+    "city_name": "نمین",
+    "state_id": 3
+  },
+  {
+    "ciy_id": 413,
+    "city_name": "نور",
+    "state_id": 27
+  },
+  {
+    "ciy_id": 414,
+    "city_name": "نوشهر",
+    "state_id": 27
+  },
+  {
+    "ciy_id": 415,
+    "city_name": "نهاوند",
+    "state_id": 30
+  },
+  {
+    "ciy_id": 416,
+    "city_name": "نهبندان",
+    "state_id": 10
+  },
+  {
+    "ciy_id": 417,
+    "city_name": "نی ریز",
+    "state_id": 17
+  },
+  {
+    "ciy_id": 418,
+    "city_name": "نیر",
+    "state_id": 3
+  },
+  {
+    "ciy_id": 419,
+    "city_name": "نیشابور",
+    "state_id": 11
+  },
+  {
+    "ciy_id": 420,
+    "city_name": "نیک شهر",
+    "state_id": 16
+  },
+  {
+    "ciy_id": 421,
+    "city_name": "نیمروز",
+    "state_id": 16
+  },
+  {
+    "ciy_id": 422,
+    "city_name": "ورامین",
+    "state_id": 8
+  },
+  {
+    "ciy_id": 423,
+    "city_name": "ورزقان",
+    "state_id": 1
+  },
+  {
+    "ciy_id": 424,
+    "city_name": "هامون",
+    "state_id": 16
+  },
+  {
+    "ciy_id": 425,
+    "city_name": "هرسین",
+    "state_id": 22
+  },
+  {
+    "ciy_id": 426,
+    "city_name": "هریس",
+    "state_id": 1
+  },
+  {
+    "ciy_id": 427,
+    "city_name": "هشترود",
+    "state_id": 1
+  },
+  {
+    "ciy_id": 428,
+    "city_name": "هفتکل",
+    "state_id": 13
+  },
+  {
+    "ciy_id": 429,
+    "city_name": "همدان",
+    "state_id": 30
+  },
+  {
+    "ciy_id": 430,
+    "city_name": "هندیجان",
+    "state_id": 13
+  },
+  {
+    "ciy_id": 431,
+    "city_name": "هوراند",
+    "state_id": 1
+  },
+  {
+    "ciy_id": 432,
+    "city_name": "هویزه",
+    "state_id": 13
+  },
+  {
+    "ciy_id": 433,
+    "city_name": "هیرمند",
+    "state_id": 16
+  },
+  {
+    "ciy_id": 434,
+    "city_name": "یزد",
+    "state_id": 31
+  }
+]

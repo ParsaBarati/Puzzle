@@ -1,0 +1,7 @@
+ErrorDocument 404 https://YOUR_ROOT_PATH/src/index
+RewritEengine on
+Options +FollowSymlinks
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://YOURDOMAIN/$1 [r=301,nc]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]]

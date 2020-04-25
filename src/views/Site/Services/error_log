@@ -1,0 +1,7 @@
+[20-Apr-2020 13:41:59 UTC] PHP Warning:  Use of undefined constant __SOURCE__ - assumed '__SOURCE__' (this will throw an Error in a future version of PHP) in /home/parsa/public_html/puzzle/Administrator/src/views/Site/Services/Services.php on line 3
+[20-Apr-2020 13:41:59 UTC] PHP Warning:  include_once(__SOURCE__autoload.php): failed to open stream: No such file or directory in /home/parsa/public_html/puzzle/Administrator/src/views/Site/Services/Services.php on line 3
+[20-Apr-2020 13:41:59 UTC] PHP Warning:  include_once(): Failed opening '__SOURCE__autoload.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/parsa/public_html/puzzle/Administrator/src/views/Site/Services/Services.php on line 3
+[20-Apr-2020 13:41:59 UTC] PHP Fatal error:  Uncaught Error: Class 'View' not found in /home/parsa/public_html/puzzle/Administrator/src/views/Site/Services/Services.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/parsa/public_html/puzzle/Administrator/src/views/Site/Services/Services.php on line 5
