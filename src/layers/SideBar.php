@@ -1,7 +1,16 @@
 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
     data-accordion="false">
     <!-- start -->
-        <?= navItemHasTreeView('مدیریت محتوای سایت', 'fa fa-stack-exchange', navItem('بنر ها', 'Site/TopBanners/TopBanners') . navItem('بنر بخش وسط', 'Site/MidBanner/MidBanner') . navItem('مدیریت تیتر ها', 'Site/Titles/Titles') . navItem('شمارنده ها', 'Site/Counters/Counters') . navItem('روند کاری', 'Site/WorkPlan/WorkPlan') . navItem('تنظیمات فوتر', 'Site/Footer/FooterSettings/FooterSettings') . navItem('مقالات', 'Site/Blog/Blogs') . navItem('خدمات', 'Site/Services/Services')
+        <?= navItemHasTreeView('مدیریت محتوای سایت',
+            'fa fa-stack-exchange',
+            navItem('بنر ها', 'Site/TopBanners/TopBanners') .
+            navItem('بنر بخش وسط', 'Site/MidBanner/MidBanner') .
+            navItem('مدیریت تیتر ها', 'Site/Titles/Titles') .
+            navItem('شمارنده ها', 'Site/Counters/Counters') .
+            navItem('روند کاری', 'Site/WorkPlan/WorkPlan') .
+            navItem('تنظیمات فوتر', 'Site/Footer/FooterSettings/FooterSettings') .
+            navItem('مقالات', 'Site/Blog/Blogs') .
+            navItem('خدمات', 'Site/Services/Services')
 
 
         ) ?>
