@@ -11,7 +11,7 @@ $avatar =$_REQUEST['avatar'];
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>پنل مدیریت دوپوندر | صفحه قفل</title>
+    <title>پنل مدیریت <?=$PROJECT__NAME?> | صفحه قفل</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -33,7 +33,7 @@ $avatar =$_REQUEST['avatar'];
 <!-- Automatic element centering -->
 <div class="lockscreen-wrapper">
     <div class="lockscreen-logo">
-        <a href="index.php"><b>پنل مدیریت</b></a>
+        <a href="index"><b>پنل مدیریت</b></a>
     </div>
     <!-- User name -->
     <div class="lockscreen-name"><?=$name?></div>
@@ -47,7 +47,7 @@ $avatar =$_REQUEST['avatar'];
         <!-- /.lockscreen-image -->
 
         <!-- lockscreen credentials (contains the form) -->
-        <form class="lockscreen-credentials" method="post" action="login.php">
+        <form class="lockscreen-credentials" method="post" action="login">
             <div class="input-group">
                 <input type="password" name="password" class="form-control" placeholder="رمز عبور">
                 <input type="hidden" name="uname" value="<?=$username?>">
@@ -64,7 +64,7 @@ $avatar =$_REQUEST['avatar'];
         برای ورود مجدد رمز عبور خود را وارد کنید
     </div>
     <div class="text-center">
-        <a href="login.php">و یا با یک یوزرنیم دیگر وارد شوید</a>
+        <a href="login">و یا با یک یوزرنیم دیگر وارد شوید</a>
     </div>
     <div class="lockscreen-footer text-center mt-4">
         <strong>CopyRight &copy; 2019 <a href="http://negarine.com">Negarine</a>.</strong>
