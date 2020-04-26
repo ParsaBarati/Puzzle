@@ -9,10 +9,15 @@ use model\States;
 //$db->setDbUser($connectionConnDataVariableExtractedFromDotConnFileDb_nameUser);
 //$db->setDbPass($connectionConnDataVariableExtractedFromDotConnFileDb_nameUserPass);
 //$db->connect();
+/*
+    توجه کنید که در تعریف ستون ها در جداول دیتابیس به هیچ عنوان از حرف بزرگ استفاده نکنید
+    به عنوان مثال برای شروط مشخص روی ستون column_name مشخص از دستور {Is/IsNot}where[Column_name] استفاده کنید
+ */
 $states = new States();
 try {
-    $state = $states->db_select()->where(['state_id' => 1])->execute();
+    echo $states->db_select()->whereState_nameIs(['مشهد','تهران'])->and()->notEqual('state_id', '1')->showQuery();
 } catch (DBException $e) {
+    echo $e->getMessage();
 }
-$state->state_name->toUpper();
-$state->save();
+//$state->state_name->toUpper();
+//$state->save();

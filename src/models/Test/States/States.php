@@ -6,7 +6,7 @@ use DATABASE\Model;
 use FwDBInteraction\Primitives\Database;
 
 class States extends Model {
-    use Database;
+    use \FwDBInteraction\Primitives\Database;
     const table = 'tblStates';
     const key = 'state_id';
 }

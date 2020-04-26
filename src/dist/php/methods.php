@@ -46,7 +46,7 @@ if (!class_exists('methods')) {
             global $conn;
             $result = $conn->query("SELECT * FROM `$table`");
             while ($row = $result->fetchObject()) {
-                $row = toStr($row);
+//                $row = toStr($row);
                 yield $row;
             }
         }

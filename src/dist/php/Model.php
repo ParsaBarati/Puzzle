@@ -1,8 +1,12 @@
 <?php
+
 namespace DATABASE;
+
 use DATABASE\methods;
+
 //use FwDBInteraction\Primitives\Database;
 if (!class_exists('Model')) {
+
     abstract class Model extends methods {
         protected $session;
         protected $conn;

@@ -10,6 +10,7 @@ include __SOURCE__ . 'helpers' . DIRECTORY_SEPARATOR . 'helpers.php';
 
 include __SOURCE__ . 'helpers' . DIRECTORY_SEPARATOR . 'fw.php';
 include __SOURCE__ . 'helpers' . DIRECTORY_SEPARATOR . 'security.php';
+include __SOURCE__ . 'dist' . DIRECTORY_SEPARATOR . 'php' . DIRECTORY_SEPARATOR . 'DataBase/Exception/Exception.php';
 include __SOURCE__ . 'dist' . DIRECTORY_SEPARATOR . 'php' . DIRECTORY_SEPARATOR . 'DataBase/Utils/DirectInterAction.php';
 include __SOURCE__ . 'dist' . DIRECTORY_SEPARATOR . 'php' . DIRECTORY_SEPARATOR . 'DataBase/Methods/Methods.php';
 include __SOURCE__ . 'dist' . DIRECTORY_SEPARATOR . 'php' . DIRECTORY_SEPARATOR . 'DataBase/Database.php';

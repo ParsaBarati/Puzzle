@@ -11,6 +11,7 @@ use PDO;
 use PDOStatement;
 use stdClass;
 use Str;
+
 if (!trait_exists('Database')) {
     trait Database {
         use DirectInterAction;
@@ -251,6 +252,107 @@ if (!trait_exists('Database')) {
             return $this->__db_pass;
         }
 
+        public function __call($name, $arguments) {
+
+            $name = new Str($name);
+            if ($name->startsWith('where')) {
+                $query = $this->getQueryString() . ' where ';
+                $name->replace('where', '');
+                $table = $this::table;
+                $data = $this->query("DESCRIBE $table");
+                $Fields = [];
+                while ($row = $data->fetchObject()) {
+                    $Fields[] = $row->Field;
+                }
+                $firstChar = $name->fistChar()->toLower();
+                $name->removeFirst();
+                $name = new Str($firstChar . $name);
+                $tmp_name = $name;
+                if ($tmp_name->endsWith('Is')) {
+                    $name->removeLast();
+                    $name->removeLast();
+                    foreach ($Fields as $field) {
+                        if ($field == $name->__toString()) {
+                            $args = $arguments[0];
+                            if (is_string($args)) {
+                                $query .= "$field = '$args'";
+                            } else if (is_array($args)) {
+                                foreach ($args as $arg) {
+                                    $query .= "$field = '$arg' OR ";
+                                }
+                                $query = trim($query);
+                                $query = substr($query, 0, strlen($query) - 3);
+                            } else {
+                                throw new DBException('Expected array or string "' . gettype($arguments[0]) . '" provided');
+                            }
+                        }
+                    }
+                } elseif ($tmp_name->endsWith('IsNot')) {
+                    $name->removeLast();
+                    $name->removeLast();
+                    $name->removeLast();
+                    $name->removeLast();
+                    $name->removeLast();
+                    foreach ($Fields as $field) {
+                        if ($field == $name->__toString()) {
+                            $args = $arguments[0];
+                            if (is_string($args)) {
+                                $query .= "$field = '$args'";
+                            } else if (is_array($args)) {
+                                foreach ($args as $arg) {
+                                    $query .= "$field != '$arg' OR ";
+                                }
+                                $query = trim($query);
+                                $query = substr($query, 0, strlen($query) - 3);
+                            } else {
+                                throw new DBException('Expected array or string "' . gettype($arguments[0]) . '" provided');
+                            }
+                        }
+                    }
+                }
+                if ($query == $this->getQueryString() . ' where ') {
+                    throw new DBException('Column not found in table "' . $table . '"');
+                }
+                echo "<pre dir='ltr'>$query</pre>";
+                $this->setQueryString($query);
+                return $this;
+            }
+        }
+
+        public function and(string $queryString = '') {
+            $query = $this->getQueryString();
+            $this->setQueryString($query." AND  $queryString " . ((strlen($queryString) > 0) ? 'AND ' : ''));
+            return $this;
+        }
+        public function or(string $queryString = '') {
+            $query = $this->getQueryString();
+            $this->setQueryString($query." OR  $queryString " . ((strlen($queryString) > 0) ? 'OR ' : ''));
+            return $this;
+        }
+        public function equals(string $key, string $value) {
+            $this->setQueryString($this->getQueryString()." $key = $value ");
+            return $this;
+        }
+        public function notEqual(string $key, string $value) {
+            $this->setQueryString($this->getQueryString()." $key != $value ");
+            return $this;
+        }
+        public function contains(string $key, string $value) {
+            $this->setQueryString($this->getQueryString()." $key LIKE '%$value%' ");
+            return $this;
+        }
+        public function starts_with(string $key, string $value) {
+            $this->setQueryString($this->getQueryString()." $key LIKE '$value%' ");
+            return $this;
+        }
+        public function ends_with(string $key, string $value) {
+            $this->setQueryString($this->getQueryString()." $key LIKE '%$value' ");
+            return $this;
+        }
+        public function showQuery(){
+            $query = $this->getQueryString();
+            return "<kbd dir='ltr'>$query</kbd>";
+        }
         /**
          * @param mixed $_db_pass
          */

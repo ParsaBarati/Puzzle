@@ -1430,3 +1430,20 @@ function endsWith($haystack, $needle) {
 
     return (substr($haystack, -$length) === $needle);
 }
+function arrayHasSubString(array $array, string $subString){
+    foreach ($array as $value){
+        if (strpos($value,$subString) !== false){
+            return true;
+        }
+    }
+    return false;
+}
+
+function subStringInArray(string $subString, array $array){
+    foreach ($array as $value){
+        if (strpos($subString,$value) !== false){
+            return true;
+        }
+    }
+    return false;
+}

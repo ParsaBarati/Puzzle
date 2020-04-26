@@ -27,6 +27,45 @@ if (!class_exists('Str')) {
             $this->setValue($string);
         }
 
+        public function fistChar() {
+            return new Str($this->getValue()[0]);
+        }
+
+        public function removeFirst() {
+            $this->setValue(substr($this->getValue(), 1, $this->len()));
+            return new Str($this->getValue());
+        }
+        public function removeLast() {
+            $this->setValue(substr($this->getValue(), 0, $this->len() - 1));
+            return new Str($this->getValue());
+        }
+        public function removeNth(int $pos) {
+            $this->setValue(substr($this->getValue(), 0, $pos).substr($this->getValue(),$pos,$this->len()));
+            return new Str($this->getValue());
+        }
+
+        public function lastChar() {
+            return new Str($this->getValue()[$this->len()]);
+        }
+
+        public function nthChar(int $pos) {
+            return new Str($this->getValue()[$pos]);
+        }
+
+        public function endsWith($needle) {
+            $length = strlen($needle);
+            if ($length == 0) {
+                return true;
+            }
+
+            return (substr($this->getValue(), -$length) === $needle);
+        }
+
+        public function startsWith($needle) {
+            $length = strlen($needle);
+            return (substr($this->getValue(), 0, $length) === $needle);
+        }
+
         /**
          * @param string $string
          * @return int
