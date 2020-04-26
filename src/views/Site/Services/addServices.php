@@ -20,8 +20,8 @@ $View->submit();
                 $View->Html()->Input('title') .
                 $View->Html()->FormGroupEnd() .
 
-                $View->Html()->FormGroupStart(4)
-                . $View->Html()->Label('آیکون') .
+                $View->Html()->FormGroupStart(4)  .
+                $View->Html()->Label('آیکون') .
                 $View->Html()->ImageInput('icon', 'image/png', 36, 36) .
                 $View->Html()->FormGroupEnd() .
 
@@ -29,7 +29,11 @@ $View->submit();
                 $View->Html()->Label('تصویر') .
                 $View->Html()->ImageInput('image', 'image/png', 499, 404) .
                 $View->Html()->FormGroupEnd() .
-                $View->Html()->FormGroupStart(12) . $View->Html()->Label('توضیحات') . $View->Html()->TextArea('text', 'text') . $View->Html()->FormGroupEnd() ?>
+                $View->Html()->FormGroupStart(12) .
+                $View->Html()->Label('توضیحات')
+                . $View->Html()->TextArea('text', 'text') .
+                $View->Html()->FormGroupEnd()
+                ?>
                 <?
                 $View->CardFooter()
                 ?>
@@ -38,5 +42,5 @@ $View->submit();
     </div>
 </section>
 <script>
-    $("#text").trumbowyg();
+    $.checkText();
 </script>

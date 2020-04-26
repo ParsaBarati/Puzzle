@@ -1,7 +1,7 @@
 <?php
 include '../../../autoload.php';
 $View = new View($_REQUEST, 'خدمت');
-$View->Html()->breadcrumbs();
+$View->breadcrumbs();
 $View->submit();
 $View->doFill();
 
@@ -41,3 +41,6 @@ $View->doFill();
         </div>
     </div>
 </section>
+<script>
+    $.checkText();
+</script>

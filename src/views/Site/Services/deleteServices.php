@@ -41,3 +41,6 @@ $View->doDisableAll();
         </div>
     </div>
 </section>
+ <script>
+     $.checkText();
+ </script>

@@ -1,6 +1,6 @@
 <?php
 include '../../../autoload.php';
-$View = new View($_REQUEST, 'خدمت');
+$View = new View($_REQUEST, 'خدمت','خدمات');
 $View->breadcrumbs();
 ?>
 <section class="content">
@@ -15,12 +15,12 @@ $View->breadcrumbs();
                 <div class="card-body table-responsive">
                     <table class="table table-striped table-bordered">
                         <thead class="table-dark">
-                        <tr>
-                            <th class="no-sort" width="50">ردیف</th>
-                            <th>نام خدمت</th>
-                            <th>آیکون</th>
-                            <th width="150">عملیات</th>
-                        </tr>
+                            <tr>
+                                <th class="no-sort" width="50">ردیف</th>
+                                <th>نام خدمت</th>
+                                <th>آیکون</th>
+                                <th class="no-sort" width="150">عملیات</th>
+                            </tr>
                         </thead>
                         <tbody>
                         <?= $View->show(['title', 'showImage' => 'icon']) ?>

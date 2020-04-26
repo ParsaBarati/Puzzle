@@ -5,8 +5,10 @@ namespace FwDBInteraction\Primitives;
 use DBException;
 use FwDBInteraction\Primitive\Methods\Methods;
 use FwDBInteraction\Primitives\DirectInterAction;
+use FwDBInteraction\Primitives\Orm\Column;
 use FwDBInteraction\Primitives\Orm\DBResult;
 use Error;
+use helpers\numToWord;
 use PDO;
 use PDOStatement;
 use stdClass;
@@ -23,13 +25,15 @@ if (!trait_exists('Database')) {
         private $select_cols = array('*');
         private $queryString = '';
         private $_TYPE;
+        private $join_classes = array();
 
         /**
          * @param string $statement
          * @return false|mixed|PDOStatement
          */
         public function query($statement) {
-            return $this->connection->query($statement);
+            global $conn;
+            return $conn->query($statement);
         }
 
         /**
@@ -58,6 +62,20 @@ if (!trait_exists('Database')) {
          */
         private function setTYPE($TYPE) {
             $this->_TYPE = $TYPE;
+        }
+
+        /**
+         * @return array
+         */
+        private function getJoinClasses(): array {
+            return $this->join_classes;
+        }
+
+        /**
+         * @param array $join_classes
+         */
+        private function setJoinClasses(array $join_classes) {
+            $this->join_classes = $join_classes;
         }
 
         /**
@@ -119,6 +137,14 @@ if (!trait_exists('Database')) {
             $table = $this::table;
             $this->setQueryString("INSERT INTO $table $col");
             return $this;
+        }
+
+        public function __construct() {
+            $table = $this::table;
+            $data = $this->query("DESCRIBE $table");
+            while ($row = $data->fetchObject()) {
+                $this->{$row->Field} = new Column($row->Field, $table);
+            }
         }
 
         public function where(array $columns = []) {
@@ -300,7 +326,7 @@ if (!trait_exists('Database')) {
                                 $query .= "$field = '$args'";
                             } else if (is_array($args)) {
                                 foreach ($args as $arg) {
-                                    $query .= "$field != '$arg' OR ";
+                                    $query .= "$field != '$arg' AND ";
                                 }
                                 $query = trim($query);
                                 $query = substr($query, 0, strlen($query) - 3);
@@ -313,46 +339,161 @@ if (!trait_exists('Database')) {
                 if ($query == $this->getQueryString() . ' where ') {
                     throw new DBException('Column not found in table "' . $table . '"');
                 }
-                echo "<pre dir='ltr'>$query</pre>";
                 $this->setQueryString($query);
                 return $this;
             }
         }
 
+        static function __callStatic($name, $arguments) {
+            global $conn;
+            $table = self::table;
+            $data = $conn->query("DESCRIBE $table");
+            $itemName = '';
+            while ($row = $data->fetchObject()) {
+                $field = $row->Field;
+                if ($field === $name) {
+                    $itemName = $name;
+                    break;
+                }
+            }
+            if ($itemName !== '') {
+                return $itemName;
+            } else {
+                throw new DBException('Column not found in table "' . $table . '"');
+            }
+
+        }
+
+        /**
+         * @param string $queryString
+         * @return $this
+         */
         public function and(string $queryString = '') {
             $query = $this->getQueryString();
-            $this->setQueryString($query." AND  $queryString " . ((strlen($queryString) > 0) ? 'AND ' : ''));
+            $this->setQueryString($query . " AND  $queryString " . ((strlen($queryString) > 0) ? 'AND ' : ''));
             return $this;
         }
+
+        /**
+         * @param string $queryString
+         * @return $this
+         */
         public function or(string $queryString = '') {
             $query = $this->getQueryString();
-            $this->setQueryString($query." OR  $queryString " . ((strlen($queryString) > 0) ? 'OR ' : ''));
+            $this->setQueryString($query . " OR  $queryString " . ((strlen($queryString) > 0) ? 'OR ' : ''));
             return $this;
         }
+
+        /**
+         * @param string $key
+         * @param string $value
+         * @return $this
+         */
         public function equals(string $key, string $value) {
-            $this->setQueryString($this->getQueryString()." $key = $value ");
+            $this->setQueryString($this->getQueryString() . " $key = $value ");
             return $this;
         }
+
+        /**
+         * @param string $key
+         * @param string $value
+         * @return $this
+         */
         public function notEqual(string $key, string $value) {
-            $this->setQueryString($this->getQueryString()." $key != $value ");
+            $this->setQueryString($this->getQueryString() . " $key != $value ");
             return $this;
         }
+
+        /**
+         * @param string $key
+         * @param string $value
+         * @return $this
+         */
         public function contains(string $key, string $value) {
-            $this->setQueryString($this->getQueryString()." $key LIKE '%$value%' ");
+            $this->setQueryString($this->getQueryString() . " $key LIKE '%$value%' ");
             return $this;
         }
+
+        /**
+         * @param string $key
+         * @param string $value
+         * @return $this
+         */
         public function starts_with(string $key, string $value) {
-            $this->setQueryString($this->getQueryString()." $key LIKE '$value%' ");
+            $this->setQueryString($this->getQueryString() . " $key LIKE '$value%' ");
             return $this;
         }
+
+        /**
+         * @param string $key
+         * @param string $value
+         * @return $this
+         */
         public function ends_with(string $key, string $value) {
-            $this->setQueryString($this->getQueryString()." $key LIKE '%$value' ");
+            $this->setQueryString($this->getQueryString() . " $key LIKE '%$value' ");
             return $this;
         }
-        public function showQuery(){
+
+        public function left_join($modelClass) {
+            $classes = $this->getJoinClasses();
+            array_push($classes, $modelClass);
+            $this->setJoinClasses($classes);
+            $table = new Str($modelClass::table);
+            $join_table = $table->replace('tbl', '', true)->toLower(true);
             $query = $this->getQueryString();
-            return "<kbd dir='ltr'>$query</kbd>";
+            if (substr_count($query, 'LEFT JOIN') === 0) {
+                $firstTable = new Str($this::table);
+                $thisToLower = $firstTable->replace('tbl', '', true)->toLower(true);
+                $query = "$query as $thisToLower LEFT JOIN $table as $join_table";
+            } else {
+                $firstTable = new Str($this::table);
+                $thisToLower = $firstTable->replace('tbl', '', true)->toLower(true);
+                $query = "$query LEFT JOIN $table as $join_table";
+            }
+            $this->setQueryString($query);
+            return $this;
         }
+
+        public function onEquals() {
+            $class = end($this->getJoinClasses());
+            if (func_num_args() == 0) {
+                $query = $this->getQueryString();
+                $firstTable = new Str($this::table);
+                $secTable = new Str($class::table);
+                $firstKey = $this::key;
+                $thisToLower = $firstTable->replace('tbl', '', true)->toLower(true);
+                $secTable = $secTable->replace('tbl', '', true)->toLower(true);
+                $this->setQueryString("$query on $thisToLower.$firstKey = $secTable.$firstKey");
+            } elseif (func_num_args() == 1) {
+                $query = $this->getQueryString();
+                $firstTable = new Str($this::table);
+                $secTable = new Str($class::table);
+                $firstKey = $this::key;
+                $thisToLower = $firstTable->replace('tbl', '', true)->toLower(true);
+                $secTable = $secTable->replace('tbl', '', true)->toLower(true);
+                $secKey = func_get_arg(0);
+                $this->setQueryString("$query on $thisToLower.$firstKey = $secTable.$secKey");
+            } elseif (func_num_args() == 2) {
+                $query = $this->getQueryString();
+                $firstTable = new Str($this::table);
+                $secTable = new Str($class::table);
+                $thisToLower = $firstTable->replace('tbl', '', true)->toLower(true);
+                $secTable = $secTable->replace('tbl', '', true)->toLower(true);
+                $secKey = func_get_arg(0);
+                $firstKey = func_get_arg(1);
+                $this->setQueryString("$query on $thisToLower.$secKey = $secTable.$firstKey");
+            }
+            return $this;
+        }
+
+        /**
+         * @return string
+         */
+        public function showQuery() {
+            $query = $this->getQueryString();
+            return "<br><kbd dir='ltr'>$query</kbd><br>";
+        }
+
         /**
          * @param mixed $_db_pass
          */

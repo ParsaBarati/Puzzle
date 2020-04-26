@@ -16,6 +16,9 @@ foreach (new RegexIterator(new RecursiveIteratorIterator(new RecursiveDirectoryI
     let fw_referrer = 'undefined';
     $.Ajax = function (json_pages = <?=json_encode($allFiles)?>, allViews = <?=json_encode($views)?>, allControllers = <?=json_encode($controllers)?>) {
         $('.ajax').click(function (e) {
+            if (Swal.isVisible()){
+                Swal.close();
+            }
             $('.modal').modal("hide");
             $.loader();
             e.preventDefault();

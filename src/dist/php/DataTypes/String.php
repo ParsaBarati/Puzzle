@@ -31,16 +31,18 @@ if (!class_exists('Str')) {
             return new Str($this->getValue()[0]);
         }
 
-        public function removeFirst() {
-            $this->setValue(substr($this->getValue(), 1, $this->len()));
+        public function removeFirst(bool $silent = false) {
+            if (!$silent) $this->setValue(substr($this->getValue(), 1, $this->len()));
             return new Str($this->getValue());
         }
-        public function removeLast() {
-            $this->setValue(substr($this->getValue(), 0, $this->len() - 1));
+
+        public function removeLast(bool $silent = false) {
+            if (!$silent) $this->setValue(substr($this->getValue(), 0, $this->len() - 1));
             return new Str($this->getValue());
         }
-        public function removeNth(int $pos) {
-            $this->setValue(substr($this->getValue(), 0, $pos).substr($this->getValue(),$pos,$this->len()));
+
+        public function removeNth(int $pos, bool $silent = false) {
+            if (!$silent) $this->setValue(substr($this->getValue(), 0, $pos) . substr($this->getValue(), $pos, $this->len()));
             return new Str($this->getValue());
         }
 
@@ -84,11 +86,12 @@ if (!class_exists('Str')) {
         /**
          * @param $search
          * @param $replace
+         * @param bool $silent
          * @return string
          */
-        public function replace($search, $replace) {
-            $this->setValue(str_replace($search, $replace, $this->getValue()));
-            return str_replace($search, $replace, $this->getValue());
+        public function replace($search, $replace, bool $silent = false) {
+            if (!$silent) $this->setValue(str_replace($search, $replace, $this->getValue()));
+            return new Str(str_replace($search, $replace, $this->getValue()));
         }
 
         /**
@@ -109,37 +112,41 @@ if (!class_exists('Str')) {
         /**
          * @param string $search
          * @param string $resplace
+         * @param bool $silent
          * @return string|string[]
          */
-        public function ireplace(string $search, string $resplace) {
-            $this->setValue(str_ireplace($search, $resplace, $this->getValue()));
+        public function ireplace(string $search, string $resplace, bool $silent = false) {
+            if (!$silent) $this->setValue(str_ireplace($search, $resplace, $this->getValue()));
             return str_ireplace($search, $resplace, $this->getValue());
         }
 
         /**
          * @param int $length
          * @param string $pad_string
+         * @param bool $silent
          * @return string
          */
-        public function pad(int $length, string $pad_string = '.') {
-            $this->setValue(str_pad($this->getValue(), $length, $pad_string));
+        public function pad(int $length, string $pad_string = '.', bool $silent = false) {
+            if (!$silent) $this->setValue(str_pad($this->getValue(), $length, $pad_string));
             return str_pad($this->getValue(), $length, $pad_string);
         }
 
         /**
          * @param int $multiplier
+         * @param bool $silent
          * @return string
          */
-        public function repeat(int $multiplier) {
-            $this->setValue(str_repeat($this->getValue(), $multiplier));
+        public function repeat(int $multiplier, bool $silent = true) {
+            if (!$silent) $this->setValue(str_repeat($this->getValue(), $multiplier));
             return str_repeat($this->getValue(), $multiplier);
         }
 
         /**
+         * @param bool $silent
          * @return string
          */
-        public function shuffle() {
-            $this->setValue(str_shuffle($this->getValue()));
+        public function shuffle(bool $silent = false) {
+            if ($silent) $this->setValue(str_shuffle($this->getValue()));
             return str_shuffle($this->getValue());
         }
 
@@ -150,16 +157,22 @@ if (!class_exists('Str')) {
             return str_word_count($this->getValue());
         }
 
-        public function strip_tags(string $allow = '') {
-            $this->setValue(strip_tags($this->getValue(), $allow));
+        /**
+         * @param string $allow
+         * @param bool $silent
+         * @return string
+         */
+        public function strip_tags(string $allow = '', bool $silent = false) {
+            if (!$silent) $this->setValue(strip_tags($this->getValue(), $allow));
             return strip_tags($this->getValue(), $allow);
         }
 
         /**
+         * @param bool $silent
          * @return string
          */
-        public function rev() {
-            $this->setValue(strrev($this->getValue()));
+        public function rev(bool $silent = true) {
+            if (!$silent) $this->setValue(strrev($this->getValue()));
             return strrev($this->getValue());
         }
 
@@ -179,19 +192,21 @@ if (!class_exists('Str')) {
         }
 
         /**
+         * @param bool $silent
          * @return string
          */
-        public function toUpper() {
-            $this->setValue(strtoupper($this->getValue()));
-            return strtoupper($this->getValue());
+        public function toUpper(bool $silent = false) {
+            if (!$silent) $this->setValue(strtoupper($this->getValue()));
+            return new Str(strtoupper($this->getValue()));
         }
 
         /**
+         * @param bool $silent
          * @return string
          */
-        public function toLower() {
-            $this->setValue(strtolower($this->getValue()));
-            return strtolower($this->getValue());
+        public function toLower(bool $silent = false) {
+            if (!$silent) $this->setValue(strtolower($this->getValue()));
+            return new Str(strtolower($this->getValue()));
         }
 
         /**
@@ -245,19 +260,21 @@ if (!class_exists('Str')) {
 
         /**
          * @param string $split
+         * @param bool $silent
          * @return string
          */
-        public function tok(string $split) {
-            $this->setValue(strtok($this->getValue(), $split));
+        public function tok(string $split, bool $silent = false) {
+            if (!$silent) $this->setValue(strtok($this->getValue(), $split));
             return strtok($this->getValue(), $split);
         }
 
         /**
          * @param string $charlist
+         * @param bool $silent
          * @return string
          */
-        public function trim(string $charlist) {
-            $this->setValue(trim($this->getValue(), $charlist));
+        public function trim(string $charlist, bool $silent = false) {
+            if (!$silent) $this->setValue(trim($this->getValue(), $charlist));
             return trim($this->getValue(), $charlist);
         }
 
