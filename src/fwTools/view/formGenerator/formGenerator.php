@@ -121,10 +121,10 @@ use fwTools\all\Models; ?>
                                                             <h5>ورودی نوشتاری (معمولی)</h5>
                                                             <h6>لیبل</h6>
                                                             <div class="input-group w-100">
-                                                                <input required name="label[index_0]"
+                                                                <input required name="label[0]"
                                                                        placeholder="مثال: نام استان"
                                                                        class="form-control w-50">
-                                                                <select required name="type[index_0]"
+                                                                <select required name="type[0]"
                                                                         class="form-control w-50">
                                                                     <option value="varchar">کاراکتر کم</option>
                                                                     <option value="text">کاراکتر زیاد</option>
@@ -133,13 +133,13 @@ use fwTools\all\Models; ?>
                                                             </div>
                                                         </div>
                                                         <div class="card-tools">
-                                                            <button type="button"  class="btn btn-tool removeMe"><i
+                                                            <button type="button" class="btn btn-tool removeMe"><i
                                                                         class="fa fa-times"></i>
                                                             </button>
-                                                            <button type="button"  class="btn btn-tool showAndHide"><i
+                                                            <button type="button" class="btn btn-tool showAndHide"><i
                                                                         class="fa fa-eye"></i>
                                                             </button>
-                                                            <input type="hidden" class="togShow" name="show[index_0]"
+                                                            <input type="hidden" class="togShow" name="show[0]"
                                                                    value="true">
 
                                                         </div>
@@ -151,18 +151,20 @@ use fwTools\all\Models; ?>
                                                                     نام:
                                                                 </div>
                                                             </div>
-                                                            <input required name="name[index_0]" placeholder="state_name"
+                                                            <input required name="name[0]"
+                                                                   placeholder="state_name"
                                                                    class="form-control"
                                                                    dir="ltr" type="text">
-                                                            <input type="hidden" name="col_type[index_0]" value="input">
-                                                            <input type="hidden" name="class[index_0]" value="*">
+                                                            <input type="hidden" name="col_type[0]" value="input">
+                                                            <input type="hidden" name="class[0]" value="*">
                                                         </div>
                                                     </div>
                                                     <div class="card-footer">
                                                         <div class="validations">
                                                             <div class="form-group">
                                                                 <label>اعتبار سنجی</label>
-                                                                <select name="validations[index_0]" class="form-control w-100">
+                                                                <select name="validations[0]"
+                                                                        class="form-control w-100">
                                                                     <option value="Input">فاقد اعتبار سنجی</option>
                                                                     <option value="Price">قیمت</option>
                                                                     <option value="Mobile">شماره موبایل</option>
@@ -172,7 +174,8 @@ use fwTools\all\Models; ?>
                                                                 </select>
                                                             </div>
                                                         </div>
-                                                        <input required name="slider[index_0]" value="4" class="slider w-100"
+                                                        <input required name="slider[0]" value="4"
+                                                               class="slider w-100"
                                                                min="1"
                                                                max="12"
                                                                type="range">
@@ -208,23 +211,23 @@ use fwTools\all\Models; ?>
         let id = $(lastDiv).attr("id");
         id = id.split('_')[1];
         id++;
-        id = 'index_' + id;
+        id = '' + id;
         let addable = '<div class="form-group col-md-4 parentDiv">\n' +
-            '                                                <div id="card_'+id+'" class="card card-danger card-outline bg-transparent">\n' +
+            '                                                <div id="card_' + id + '" class="card card-danger card-outline bg-transparent">\n' +
             '                                                    <div class="card-header">\n' +
             '                                                        <div class="card-title">\n' +
             '                                                            <h5>ورودی تصویر (image)</h5>\n' +
             '                                                            <h6>عکس</h6>\n' +
             '                                                            <div class="input-group w-100">\n' +
-            '                                                                <input required name="label['+id+']"\n' +
+            '                                                                <input required name="label[' + id + ']"\n' +
             '                                                                       placeholder="مثال: تصویر استان"\n' +
             '                                                                       class="form-control w-50">\n' +
-            '                                                                <select required name="imageData['+id+'][type]"\n' +
+            '                                                                <select required name="imageData[' + id + '][type]"\n' +
             '                                                                        class="form-control w-50">\n' +
             '                                                                    <option value="image/jpeg">فرمت jpg</option>\n' +
             '                                                                    <option value="image/png">فرمت png</option>\n' +
             '                                                                </select>\n' +
-                '<input type="hidden" value="varchar" name="type['+id+']">' +
+            '<input type="hidden" value="varchar" name="type[' + id + ']">' +
             '                                                            </div>\n' +
             '                                                        </div>\n' +
             '                                                        <div class="card-tools">\n' +
@@ -234,7 +237,7 @@ use fwTools\all\Models; ?>
             '                                                            <button type="button"  class="btn btn-tool showAndHide"><i\n' +
             '                                                                        class="fa fa-eye"></i>\n' +
             '                                                            </button>\n' +
-            '                                                            <input type="hidden" class="togShow" name="show['+id+']"\n' +
+            '                                                            <input type="hidden" class="togShow" name="show[' + id + ']"\n' +
             '                                                                   value="true">\n' +
             '\n' +
             '                                                        </div>\n' +
@@ -246,11 +249,11 @@ use fwTools\all\Models; ?>
             '                                                                    نام:\n' +
             '                                                                </div>\n' +
             '                                                            </div>\n' +
-            '                                                            <input required name="name['+id+']" placeholder="state_image"\n' +
+            '                                                            <input required name="name[' + id + ']" placeholder="state_image"\n' +
             '                                                                   class="form-control"\n' +
             '                                                                   dir="ltr" type="text">\n' +
-            '                                                            <input type="hidden" name="col_type['+id+']" value="image">\n' +
-            '                                                            <input type="hidden" name="class['+id+']" value="*">\n' +
+            '                                                            <input type="hidden" name="col_type[' + id + ']" value="image">\n' +
+            '                                                            <input type="hidden" name="class[' + id + ']" value="*">\n' +
             '                                                        </div>\n' +
             '                                                    </div>\n' +
             '                                                    <div class="card-footer">\n' +
@@ -258,26 +261,27 @@ use fwTools\all\Models; ?>
             '                                                            <div class="form-group">\n' +
             '                                                                <label>اعتبار سنجی</label>\n' +
             '                                                                 <div class="input-group w-100">' +
-                '<div class="input-group-prepend">' +
-                '<div class="input-group-text"> عرض </div>' +
-                '<input class="form-control" value="150" name="imageData['+id+'][width]">' +
+            '<div class="input-group-prepend">' +
+            '<div class="input-group-text"> عرض </div>' +
+            '<input class="form-control" value="150" name="imageData[' + id + '][width]">' +
             // '</div>' +
             //     '<div class="input-group-prepend">' +
-                '<div class="input-group-text"> طول </div>' +
-                '<input class="form-control" value="150" name="imageData['+id+'][height]">' +
+            '<div class="input-group-text"> طول </div>' +
+            '<input class="form-control" value="150" name="imageData[' + id + '][height]">' +
             '</div>' +
             '</div>                             \n' +
             '                                                            </div>\n' +
             '                                                        </div>\n' +
-            '                                                        <input required name="slider['+id+']" value="4" class="slider w-100"\n' +
+            '                                                        <input required name="slider[' + id + ']" value="4" class="slider w-100"\n' +
             '                                                               min="1"\n' +
             '                                                               max="12"\n' +
             '                                                               type="range">\n' +
             '                                                    </div>\n' +
             '                                                </div>\n' +
             '                                            </div>';
-        $(parent).after(addable);
 
+        $(parent).after(addable);
+        doSort();
     });
 </script>
 <script>
@@ -308,16 +312,16 @@ use fwTools\all\Models; ?>
         }
         id++;
         let addable = ' <div class="form-group col-md-4 parentDiv">\n' +
-            '                                                <div id="card_0" class="card card-danger card-outline bg-transparent">\n' +
+            '                                                <div id="card_' + id + '" class="card card-danger card-outline bg-transparent">\n' +
             '<div class="card-header">\n' +
             '                                                        <div class="card-title">\n' +
             '                                                            <h5>ورودی نوشتاری (معمولی)</h5>\n' +
             '                                                            <h6>لیبل</h6>\n' +
             '                                                            <div class="input-group w-100">\n' +
-            '                                                                <input required name="label['+id+']"\n' +
+            '                                                                <input required name="label[' + id + ']"\n' +
             '                                                                       placeholder="مثال: نام استان"\n' +
             '                                                                       class="form-control w-50">\n' +
-            '                                                                <select required name="type['+id+']"\n' +
+            '                                                                <select required name="type[' + id + ']"\n' +
             '                                                                        class="form-control w-50">\n' +
             '                                                                    <option value="varchar">کاراکتر کم</option>\n' +
             '                                                                    <option value="text">کاراکتر زیاد</option>\n' +
@@ -332,7 +336,7 @@ use fwTools\all\Models; ?>
             '                                                            <button type="button"  class="btn btn-tool showAndHide"><i\n' +
             '                                                                        class="fa fa-eye"></i>\n' +
             '                                                            </button>\n' +
-            '                                                            <input type="hidden" class="togShow" name="show['+id+']"\n' +
+            '                                                            <input type="hidden" class="togShow" name="show[' + id + ']"\n' +
             '                                                                   value="true">\n' +
             '\n' +
             '                                                        </div>\n' +
@@ -344,18 +348,18 @@ use fwTools\all\Models; ?>
             '                                                                    نام:\n' +
             '                                                                </div>\n' +
             '                                                            </div>\n' +
-            '                                                            <input required name="name['+id+']" placeholder="state_name"\n' +
+            '                                                            <input required name="name[' + id + ']" placeholder="state_name"\n' +
             '                                                                   class="form-control"\n' +
             '                                                                   dir="ltr" type="text">\n' +
-            '                                                            <input type="hidden" name="col_type['+id+']" value="input">\n' +
-            '                                                            <input type="hidden" name="class['+id+']" value="*">\n' +
+            '                                                            <input type="hidden" name="col_type[' + id + ']" value="input">\n' +
+            '                                                            <input type="hidden" name="class[' + id + ']" value="*">\n' +
             '                                                        </div>\n' +
             '                                                    </div>\n' +
             '                                                    <div class="card-footer">\n' +
             '                                                        <div class="validations">\n' +
             '                                                            <div class="form-group">\n' +
             '                                                                <label>اعتبار سنجی</label>\n' +
-            '                                                                <select name="validations['+id+']" class="form-control w-100">\n' +
+            '                                                                <select name="validations[' + id + ']" class="form-control w-100">\n' +
             '                                                                    <option value="Input">فاقد اعتبار سنجی</option>\n' +
             '                                                                    <option value="Price">قیمت</option>\n' +
             '                                                                    <option value="Mobile">شماره موبایل</option>\n' +
@@ -365,7 +369,7 @@ use fwTools\all\Models; ?>
             '                                                                </select>\n' +
             '                                                            </div>\n' +
             '                                                        </div>\n' +
-            '                                                        <input required name="slider['+id+']" value="4" class="slider w-100"\n' +
+            '                                                        <input required name="slider[' + id + ']" value="4" class="slider w-100"\n' +
             '                                                               min="1"\n' +
             '                                                               max="12"\n' +
             '                                                               type="range">\n' +
@@ -373,7 +377,7 @@ use fwTools\all\Models; ?>
             '                                                </div>\n' +
             '                                            </div>';
         $(parent).after(addable);
-
+        doSort();
     });
     $("#addEditor").on('click', function (e) {
         e.preventDefault();
@@ -388,16 +392,16 @@ use fwTools\all\Models; ?>
         }
         id++;
         let addable = ' <div class="form-group col-md-12 parentDiv">\n' +
-            '                                                <div id="card_0" class="card card-danger card-outline bg-transparent">\n' +
+            '                                                <div id="card_' + id + '" class="card card-danger card-outline bg-transparent">\n' +
             '<div class="card-header">\n' +
             '                                                        <div class="card-title">\n' +
             '                                                            <h5>ورودی متنی (پیشرفته)</h5>\n' +
             '                                                            <h6>لیبل</h6>\n' +
             '                                                            <div class="input-group w-100">\n' +
-            '                                                                <input required name="label['+id+']"\n' +
+            '                                                                <input required name="label[' + id + ']"\n' +
             '                                                                       placeholder="مثال: توضیحات استان"\n' +
             '                                                                       class="form-control w-50">\n' +
-                '<input type="hidden" name="type['+id+']" value="text">' +
+            '<input type="hidden" name="type[' + id + ']" value="text">' +
             '                                                            </div>\n' +
             '                                                        </div>\n' +
             '                                                        <div class="card-tools">\n' +
@@ -407,7 +411,7 @@ use fwTools\all\Models; ?>
             '                                                            <button type="button"  class="btn btn-tool showAndHide"><i\n' +
             '                                                                        class="fa fa-eye"></i>\n' +
             '                                                            </button>\n' +
-            '                                                            <input type="hidden" class="togShow" name="show['+id+']"\n' +
+            '                                                            <input type="hidden" class="togShow" name="show[' + id + ']"\n' +
             '                                                                   value="true">\n' +
             '\n' +
             '                                                        </div>\n' +
@@ -419,15 +423,15 @@ use fwTools\all\Models; ?>
             '                                                                    نام:\n' +
             '                                                                </div>\n' +
             '                                                            </div>\n' +
-            '                                                            <input required name="name['+id+']" placeholder="state_details"\n' +
+            '                                                            <input required name="name[' + id + ']" placeholder="state_details"\n' +
             '                                                                   class="form-control"\n' +
             '                                                                   dir="ltr" type="text">\n' +
-            '                                                            <input type="hidden" name="col_type['+id+']" value="input">\n' +
-            '                                                            <input type="hidden" name="class['+id+']" value="*">\n' +
+            '                                                            <input type="hidden" name="col_type[' + id + ']" value="input">\n' +
+            '                                                            <input type="hidden" name="class[' + id + ']" value="*">\n' +
             '                                                        </div>\n' +
             '                                                    </div>\n' +
             '                                                    <div class="card-footer">\n' +
-            '                                                        <input required name="slider['+id+']" value="12" class="slider w-100"\n' +
+            '                                                        <input required name="slider[' + id + ']" value="12" class="slider w-100"\n' +
             '                                                               min="1"\n' +
             '                                                               max="12"\n' +
             '                                                               type="range">\n' +
@@ -435,6 +439,7 @@ use fwTools\all\Models; ?>
             '                                                </div>\n' +
             '                                            </div>';
         $(parent).after(addable);
+        doSort();
 
     });
     $("#tblName").checkEnglish();
@@ -447,20 +452,20 @@ use fwTools\all\Models; ?>
         id = id.split('_')[1];
         id++;
         let addable = ' <div class="form-group col-md-4 parentDiv">\n' +
-            '                                                <div id="card_0" class="card card-danger card-outline bg-transparent">\n' +
+            '                                                <div id="card_' + id + '" class="card card-danger card-outline bg-transparent">\n' +
             '                                                    <div class="card-header">\n' +
             '                                                        <div class="card-title">\n' +
             '                                                            <h5>ورودی انتخابی (select)</h5>\n' +
             '<h6>لیبل</h6>' +
             '                                                            <div class="input-group w-100">\n' +
-            '                                                                <input required name="label['+id+']" placeholder="مثال: انتخاب استان"\n' +
+            '                                                                <input required name="label[' + id + ']" placeholder="مثال: انتخاب استان"\n' +
             '                                                                       class="form-control w-50">\n' +
-            '                                                                <select required name="class['+id+']"\n' +
+            '                                                                <select required name="class[' + id + ']"\n' +
             '                                                                        class="form-control w-50">\n' +
             '<option value="0">خالی</option>' +
             '<?=selectByClass(new Models(), "name")?>' +
-            '<input type="hidden" value="int" name="type['+id+']">' +
-            '<input type="hidden" value="Select" name="validations['+id+']">' +
+            '<input type="hidden" value="int" name="type[' + id + ']">' +
+            '<input type="hidden" value="Select" name="validations[' + id + ']">' +
 
             '                                                                </select>\n' +
             '                                                            </div>\n' +
@@ -473,7 +478,7 @@ use fwTools\all\Models; ?>
             '<button type="button" class="btn btn-tool showAndHide"><i\n' +
             '                                                                        class="fa fa-eye"></i>\n' +
             '                                                            </button>\n' +
-            '                                                            <input type="hidden" class="togShow" name="show['+id+']"\n' +
+            '                                                            <input type="hidden" class="togShow" name="show[' + id + ']"\n' +
             '                                                                   value="true">' +
             '\n' +
             '                                                        </div>\n' +
@@ -485,25 +490,66 @@ use fwTools\all\Models; ?>
             '                                                                    نام:\n' +
             '                                                                </div>\n' +
             '                                                            </div>\n' +
-            '                                                            <input required name="name['+id+']" placeholder="state_id"\n' +
+            '                                                            <input required name="name[' + id + ']" placeholder="state_id"\n' +
             '                                                                   class="form-control"\n' +
             '                                                                   dir="ltr" type="text">\n' +
-            '<input type="hidden" name="col_type['+id+']" value="select">' +
+            '<input type="hidden" name="col_type[' + id + ']" value="select">' +
             '                                                        </div>\n' +
             '                                                    </div>\n' +
             '                                                    <div class="card-footer">\n' +
-            '                                                        <input required name="slider['+id+']" value="4" class="slider w-100" min="1" max="12"\n' +
+            '                                                        <input required name="slider[' + id + ']" value="4" class="slider w-100" min="1" max="12"\n' +
             '                                                               type="range">\n' +
             '                                                    </div>\n' +
             '                                                </div>\n' +
             '                                            </div>';
         $(parent).after(addable);
+        doSort();
+
     });
     $(document).on('click', '.removeMe', function (e) {
         e.preventDefault();
         $(this).parents('.parentDiv').remove();
     });
 
+    function doSort() {
+        // $(".parentDiv").each(function () {
+        //     if ($(this).hasClass('ui-sortable')) {
+        //         $(this).sortable("destroy");
+        //     }
+        //     $(this).sortable({ opacity: 0.6, cursor: 'move', update: function() {
+        //             alert('hi')
+        //         }
+        //     });
+        // });
+        if ($(this).hasClass('ui-sortable')) {
+            $(this).sortable("destroy");
+        }
+        $("#formData").sortable({
+            opacity: 0.6, cursor: 'move',
+            update: function () {
+                let $list = $("#formData").children();
+                $("#formData").children().each(function (index) {
+                    let item = $list[index];
+                    let $item = $(item).find('div.card[id^=card_]');
+                    let id = 'card_' + index;
+                    $($item).attr('id', id);
+                    $($item).find('input').each(function () {
+                        let name = $(this).attr("name");
+                        let first = name.indexOf('[');
+                        let second = name.indexOf(']');
+                        $(this).attr("name", (name.substring(0, first + 1) + index + name.substring(first + 2, second + 1)));
+                    });
+                    $($item).find('select').each(function () {
+                        let name = $(this).attr("name");
+                        let first = name.indexOf('[');
+                        let second = name.indexOf(']');
+                        $(this).attr("name", (name.substring(0, first + 1) + index + name.substring(first + 2, second + 1)));
+                    });
+                });
+
+            }
+        });
+    }
 
 
     $(document).on('click', '.showAndHide', function (e) {

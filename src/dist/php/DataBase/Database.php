@@ -148,7 +148,6 @@ if (!trait_exists('Database')) {
         }
 
         public function where(array $columns = []) {
-
             switch ($this->getTYPE()) {
                 case "select":
                     $where = ' WHERE ';
@@ -180,6 +179,41 @@ if (!trait_exists('Database')) {
                 default:
                     throw new DBException('pleas specify the condition type');
             }
+            return $this;
+        }
+
+        public function join_where_equals(string $filter_value, string $filter_field = 'def', $modelClass = 'def') {
+            $query = $this->getQueryString();
+            if ($modelClass === 'def') {
+                $modelClass = end($this->getJoinClasses());
+                if ($filter_field === 'def') {
+                    $filter_field = $modelClass::key;
+                }
+            }
+            if ($filter_field === 'def') {
+                $filter_field = $modelClass::key;
+            }
+            $tbl = new Str($modelClass::table);
+            $lwr = $tbl->replace('tbl', '', true)->toLower(true);
+            $query = "$query WHERE $lwr.$filter_field = $filter_value";
+            $this->setQueryString($query);
+            return $this;
+        }
+        public function join_where_is_not_equal(string $filter_value, string $filter_field = 'def', $modelClass = 'def') {
+            $query = $this->getQueryString();
+            if ($modelClass === 'def') {
+                $modelClass = end($this->getJoinClasses());
+                if ($filter_field === 'def') {
+                    $filter_field = $modelClass::key;
+                }
+            }
+            if ($filter_field === 'def') {
+                $filter_field = $modelClass::key;
+            }
+            $tbl = new Str($modelClass::table);
+            $lwr = $tbl->replace('tbl', '', true)->toLower(true);
+            $query = "$query WHERE $lwr.$filter_field != $filter_value";
+            $this->setQueryString($query);
             return $this;
         }
 

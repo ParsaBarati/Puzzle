@@ -1,4 +1,5 @@
 <script src="https://cdn.negarine.com/jQuery/jquery.min.js"></script>
+<script src="https://cdn.negarine.com/ui/jquery-ui.min.js"></script>
 <link rel="stylesheet" href="https://cdn.negarine.com/bala.IconPicker/css/bala.IconPicker.jquery.css">
 <script type="text/javascript" src="https://cdn.negarine.com/bala.IconPicker/js/bala.IconPicker.jquery.js"></script>
 <!-- Bootstrap -->

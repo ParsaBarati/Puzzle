@@ -15,7 +15,7 @@ use model\States;
  */
 $states = new States();
 try {
-    echo $states->db_select()->left_join(new \model\Cities())->onEquals()->where(['test' => '1'])->showQuery();
+    echo $states->db_select()->left_join(new \model\Cities())->onEquals()->join_where_equals('1','state_id',new States())->showQuery();
 //    echo $states->db_select()->left_join(new \model\Cities())->left_join(new \model\Dist())->showQuery();
 //    $res = $states->db_select()->whereState_nameIsNot(['fds','تهران'])->or()->equals('state_id', '3')->execute();
 } catch (DBException $e) {

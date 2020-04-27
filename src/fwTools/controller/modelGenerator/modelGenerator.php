@@ -85,7 +85,7 @@ if (isset($_REQUEST['controller_type'])) {
                     }
                 } elseif ($type_data[$key] == 'select') {
                     $jClass = $join_data[$key] != '*' ? "new $join_data[$key]()" : "''";
-                    $selects .= "
+                    $inputs .= "
                             \$View->Html()->FormGroupStart(" . $form_data[$key] . ") .
                             \$View->Html()->Label('" . $datum . "') .
                             \$View->Html()->Select('" . $key . "', '" . $key . "', $jClass) .
