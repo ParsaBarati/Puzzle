@@ -6,7 +6,11 @@ include 'autoload.php';
 use model\auth\Admins;
 
 $Admin = new Admins();
+
+
 if ($_SESSION['admin_auth']['login'] != true and !($_COOKIE['admin_auth_aid'] > 0)) header('location: login');
+
+
 if (isset($_COOKIE['admin_auth']['admin_login'])) {
     $_SESSION['admin_auth']['aid'] = $_COOKIE['admin_auth_aid'];
     $_SESSION['admin_auth']['login'] = true;
@@ -24,10 +28,11 @@ if (isset($_SESSION['admin_auth']['aid'])) {
     }
 }
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
 <?php
-
 require_once 'layers/head.php';
 ?>
 <body class="hold-transition sidebar-mini pace-primary">

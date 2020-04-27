@@ -165,7 +165,6 @@ trait relations
     protected function sharesWithMany(array $arrayOfClasses)
     {
         global $conn;
-        include __SOURCE__ . 'helpers' . DIRECTORY_SEPARATOR . 'numToWord.php';
         $i = 0;
         $lastFKey = '';
         $query = '';

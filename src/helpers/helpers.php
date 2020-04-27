@@ -449,6 +449,7 @@ function selectByClass($class, string $name, $keyValue = '0', bool $emptyOpt = t
         $res = $class->getAll();
     }
     foreach ($res as $item) {
+        $item = (object)$item;
         $options .= '<option ' . selectChecked(($isTheKeyArray ? (in_array($item->$key, (array)$keyValue)) : ($item->$key == $keyValue))) . '  value="' . $item->$key . '"> ' . $item->$name . " " . ($secName ? $item->$secName : '') . ($join_class ? $displaNameSplitor . join_class($join_class, (!$foreignKey ? $item->{$join_class::key} : $item->$foreignKey), $display_name) : '') . '</option>';
     }
     return $options;
